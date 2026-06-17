@@ -1,0 +1,7 @@
+Rsd Bgn 178 Rb Rilland-Bath false false 0 false 6.27853 52.39141
+Bgn Gs 22 Arn Arnemuiden false false 0 false 5.40495 52.17562
+Cas Amr 17 Amrn AlkmaarNoord false false 0 false 5.40495 52.17562
+Ass Zd 245 Zdk ZaandamKogerveld false false 0 true 5.72289 51.91989
+Zl Mp 107 Hgv Hoogeveen false false 1 false 3.95674 51.4807
+Zl Mp 206 Swk Steenwijk false false 1 false 6.03181 51.23522
+Ut Wd 36 Bdg Bodegraven false false 0 true 6.57105 52.99224
