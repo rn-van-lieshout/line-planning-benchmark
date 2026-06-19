@@ -1,0 +1,50 @@
+﻿# Settings
+Instance: instances/Randstad-IC
+ODMatrix: dense
+TotalVolume: 58397.8
+TransferPenalty: small (5)
+LineGeneration: large
+Budget: small (61)
+LineActivationCost: high
+Solver: DPTNSolver-MIP
+RouteGeneration: medium
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 2128157.9778
+Cost: 60.8885
+ComputationTimeSeconds: 3603.0
+OptimalityGap: 0.0061
+DirectTravelersEstimatePct: 73.26
+OneTransferEstimatePct: 25.05
+TwoPlusTransfersEstimatePct: 1.06
+ObjectiveActual: 2143039.2005
+UncoveredDemandActualPct: 0.26
+DirectTravelersActualPct: 63.58
+OneTransferActualPct: 33.70
+TwoPlusTransfersActualPct: 2.46
+
+# LinePlan
+1 12 22 29 47
+2 6 51 48 58
+2 4 71 14 20 29
+2 14 16 19 24 35 33 41 42 44
+1 46 45 43 40 36
+1 30 26 21 15 11 0
+1 39 50 9 3 0
+1 30 26 23 66 68
+1 73 52 54
+2 21 15 57 60
+
+# Human-Readable Line Plan
+f=2   IC   Amersfoort - UtrechtCentraal - Gouda - RotterdamAlexander - RotterdamCentraal  (50.5 min)
+f=2   IC   Amersfoort - Hilversum - AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - RotterdamCentraal  (71.7 min)
+f=2   IC   AmsterdamCentraal - AmsterdamSloterdijk - Haarlem - Heemstede-Aerdenhout - LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal  (66.1 min)
+f=2   IC   Schiphol - AmsterdamSloterdijk - AmsterdamCentraal - AmsterdamAmstel - UtrechtCentraal  (40.5 min)
+f=1   IC   AlmereCentrum - AmsterdamZuid - Schiphol - RotterdamCentraal - Dordrecht  (65.4 min)
+f=1   IC   Dordrecht - RotterdamCentraal - SchiedamCentrum - Delft - DenHaagHS - DenHaagCentraal  (34.3 min)
+f=1   IC   DenHaagCentraal - LeidenCentraal - Schiphol - AmsterdamSloterdijk - AmsterdamCentraal - AlmereCentrum - LelystadCentrum  (75.8 min)
+f=1   IC   DenHaagCentraal - Gouda - UtrechtCentraal - Hilversum - AlmereCentrum - LelystadCentrum  (80.5 min)
+f=1   IC   DenHaagCentraal - LeidenCentraal - Schiphol - AmsterdamZuid - AmsterdamBijlmerArenA - UtrechtCentraal  (54.4 min)
+f=1   IC   LeidenCentraal - AlphenaandenRijn - Woerden - UtrechtCentraal  (38.8 min)

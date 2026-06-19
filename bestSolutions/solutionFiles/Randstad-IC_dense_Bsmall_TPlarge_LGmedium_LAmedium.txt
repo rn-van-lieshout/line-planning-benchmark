@@ -1,0 +1,50 @@
+﻿# Settings
+Instance: instances/Randstad-IC
+ODMatrix: dense
+TotalVolume: 58397.8
+TransferPenalty: large (25)
+LineGeneration: medium
+Budget: small (50)
+LineActivationCost: medium
+Solver: PTNSolver-Karbstein
+RouteGeneration: large
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 2609325.2788
+Cost: 49.8782
+ComputationTimeSeconds: 2095.3
+OptimalityGap: 0.0000
+DirectTravelersEstimatePct: 62.73
+OneTransferEstimatePct: 33.92
+TwoPlusTransfersEstimatePct: 0.59
+ObjectiveActual: 2617293.6052
+UncoveredDemandActualPct: 1.93
+DirectTravelersActualPct: 63.27
+OneTransferActualPct: 32.92
+TwoPlusTransfersActualPct: 1.88
+
+# LinePlan
+1 2 8 51 38
+2 10 14 16 19 24 35 33 41 42 44
+1 4 65 63 22 27 31
+1 4 71 14 20 27 31
+1 6 55 53 72
+2 14 20 29
+1 46 45 43 40 36
+1 46 28 23 13 0
+2 59 49 50
+2 21 15 57 60
+
+# Human-Readable Line Plan
+f=2   IC   AlmereCentrum - AmsterdamCentraal - AmsterdamSloterdijk - Haarlem - Heemstede-Aerdenhout - LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal  (86.1 min)
+f=2   IC   AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - RotterdamCentraal  (40.4 min)
+f=2   IC   RotterdamCentraal - RotterdamAlexander - Gouda - UtrechtCentraal  (36.0 min)
+f=2   IC   Schiphol - AmsterdamSloterdijk - AmsterdamCentraal - AmsterdamAmstel - UtrechtCentraal  (40.5 min)
+f=1   IC   AlmereCentrum - Hilversum - UtrechtCentraal - Gouda - DenHaagCentraal  (65.5 min)
+f=1   IC   Amersfoort - Hilversum - Duivendrecht - AmsterdamZuid - Schiphol - LeidenCentraal - DenHaagCentraal  (65.0 min)
+f=1   IC   Amersfoort - Hilversum - AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - LeidenCentraal - DenHaagCentraal  (72.0 min)
+f=1   IC   Amersfoort - UtrechtCentraal - Woerden - AlphenaandenRijn - LeidenCentraal  (53.4 min)
+f=1   IC   Dordrecht - RotterdamCentraal - SchiedamCentrum - Delft - DenHaagHS - DenHaagCentraal  (34.3 min)
+f=1   IC   Dordrecht - RotterdamCentraal - Schiphol - AmsterdamZuid - AlmereCentrum - LelystadCentrum  (80.4 min)

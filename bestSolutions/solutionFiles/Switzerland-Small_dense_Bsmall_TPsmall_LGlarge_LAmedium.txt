@@ -1,0 +1,64 @@
+﻿# Settings
+Instance: instances/Switzerland-Small
+ODMatrix: dense
+TotalVolume: 86401.4
+TransferPenalty: small (5)
+LineGeneration: large
+Budget: small (125)
+LineActivationCost: medium
+Solver: PTNSolver
+RouteGeneration: large
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 6514571.8461
+Cost: 124.8197
+ComputationTimeSeconds: 3602.5
+OptimalityGap: 0.0093
+DirectTravelersEstimatePct: 79.88
+OneTransferEstimatePct: 19.20
+TwoPlusTransfersEstimatePct: 0.45
+ObjectiveActual: 6538439.3101
+UncoveredDemandActualPct: 0.00
+DirectTravelersActualPct: 64.43
+OneTransferActualPct: 29.16
+TwoPlusTransfersActualPct: 6.42
+
+# LinePlan
+2 24 13 49 3
+1 4 10 26
+1 13 49 0
+3 14
+1 16 62
+1 15 43 34
+1 17 7 48 68
+3 18
+1 20 55 67 76 1 50 7 48 70
+1 22 73
+1 23
+1 30 71 46 11
+1 29 31 27
+2 39 75 78 66
+1 37 49 2
+2 45 8 49 3 78
+1 55 67 79
+
+# Human-Readable Line Plan
+f=3   IC   Bern - Thun  (23.5 min)
+f=3   IC   BaselSBB - Olten  (25.8 min)
+f=2   IC   Fribourg/Freiburg - Bern - Olten - Aarau - ZurichHB  (117.0 min)
+f=2   IC   Luzern - Zug - ZurichHB - Winterthur - Schaffhausen  (86.2 min)
+f=2   IC   Neuchatel - Biel/Bienne - Olten - Aarau - ZurichHB - Winterthur  (132.4 min)
+f=1   IC   Biel/Bienne - Bern - Fribourg/Freiburg - Martigny  (134.6 min)
+f=1   IC   Bern - Olten - Aarau - Luzern  (103.4 min)
+f=1   IC   Brig - Thun - Luzern  (123.7 min)
+f=1   IC   Brig - Martigny - Lausanne - Yverdon-les-Bains  (142.5 min)
+f=1   IC   BaselSBB - Biel/Bienne - Neuchatel - Yverdon-les-Bains - Fribourg/Freiburg  (147.2 min)
+f=1   IC   Chur - St.Gallen - Winterthur - ZurichHB - Aarau - Olten - Biel/Bienne - Neuchatel - Yverdon-les-Bains - Lausanne  (319.1 min)
+f=1   IC   Chur - Zug - Luzern  (106.8 min)
+f=1   IC   Chur - ZurichHB  (87.0 min)
+f=1   IC   Geneve - Yverdon-les-Bains - Neuchatel - Bern - Luzern  (201.6 min)
+f=1   IC   Geneve - Lausanne - Fribourg/Freiburg - Neuchatel  (132.5 min)
+f=1   IC   Luzern - Olten - Aarau - Schaffhausen  (114.2 min)
+f=1   IC   St.Gallen - Winterthur - ZurichHB - Zug  (83.3 min)

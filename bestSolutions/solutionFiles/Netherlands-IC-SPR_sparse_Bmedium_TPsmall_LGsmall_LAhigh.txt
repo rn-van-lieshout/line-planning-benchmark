@@ -1,0 +1,234 @@
+﻿# Settings
+Instance: instances/Netherlands-IC-SPR
+ODMatrix: sparse
+TotalVolume: 693374.7
+TransferPenalty: small (5)
+LineGeneration: small
+Budget: medium (680)
+LineActivationCost: high
+Solver: PTNSolver-Karbstein
+RouteGeneration: medium
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 36538470.7183
+Cost: 679.8901
+ComputationTimeSeconds: 3600.9
+OptimalityGap: 0.0028
+DirectTravelersEstimatePct: 56.63
+OneTransferEstimatePct: 24.55
+TwoPlusTransfersEstimatePct: 0.94
+ObjectiveActual: 36373818.7598
+UncoveredDemandActualPct: 17.86
+DirectTravelersActualPct: 55.50
+OneTransferActualPct: 21.18
+TwoPlusTransfersActualPct: 5.46
+
+# LinePlan
+2 670 672 674 676 678 680 734
+1 682 686 690 615 610 568 692 694 696 698 700 702 704
+2 682 686 690 623 621 576
+2 8 468 259 256 410 203 159 160 523
+1 566 576 583 601 652
+3 556 562
+1 26 23 20 28 34 217 214 246 95 96 341 338 454 423
+1 25 26 23 20 28 34 213 105 93 85 86 102 409 406 418 415 412
+1 38
+1 642 558 625 568 692 748
+1 50 56 394 61 58 337
+1 52 191 192 413 414 419 407 408 103 89 90 341
+2 699 697 695 693 574 583
+1 66 118 541 533 529 527 524 133 130 43 36 44
+1 68 420
+1 84 92 104 212 441 177 174 389 171 41 36 44
+1 86 102 548 479 477 475 365 360 349 141 137 138
+2 84 75 76 81 78 1 2 144 287 279
+1 86 89 90 341 338 454 423 249 250 315 312 309
+1 86 397 398 351 325 322 344 425 249 250 315 312 309
+4 611 614 641
+2 86 397 398 351 325 322 344 425
+1 84 75 76 81 78 1 2 142 428 531
+1 565 554 735
+1 96 341 338 454 423
+1 94 83 78 1 2 142 428 531 522 161 158 202 436 537
+1 106 444 269 266 330 333 334 544
+1 112 320 516 515 467 179 123 124 260
+1 112 320 516 515 377 374 386 473 457
+3 110 276
+1 128 461 462 551 209 205
+1 128 277 111 112 320 516 515 377
+2 142 428 531 522 520 385 382 197 194 288 519
+1 3 0 79 80 77 74 85 86 102 409 406 418 415 412
+1 170 388 175 176 440 217 214 246 95 96 341 338 454 423
+1 172 504 510 211 131 132 525
+1 170 388 175 176 440 213 105 93 85 86 102 409 406 418 415 412
+3 41 36 44 106 444 269 266 330 333 334 544
+1 170 388 175 176 440 213 105 93 85 86 397 398 351 352 470
+1 159 160 523 526 528 532 540 119 67 68 420
+1 202 411 257 258 469 9 6 14 274 451
+3 600 613 603 604 561 736 738 740 742 744
+3 206 169 166 484 495 492 496 491 201 198 281
+1 206 169 166 484 495 492 498 235 231 232 317 305 302
+1 600 599 597 594 586 588 580 575 746
+1 218 355 356 359 265 261 125 122 180 379
+1 220 163 164
+2 236 244 366 488 49 46 54 156 273 271
+2 675 673 671 669 667 665
+1 240 65 63 39 40 170
+1 242 155 152 222 480 13 11 5 6 14 274 451
+3 240 65 63 39 42 131 132 525
+1 258 469 9 6 14 274 451 446 448 452 501 459
+1 261 125 122 180 379 380 291
+2 654 656 658 662
+2 261 125 122 180 379 374 386 473 457
+4 261 125 122 178 466
+4 644 646 648
+1 745 743 741 739 737 558 619 617 576 581 589 587
+1 745 743 741 739 737 558 625 568 692 694 696 698 700 702 704
+4 282 284 553 547 535 311
+1 720 722 734 555 564 568 570 573 578 589 587
+1 720 722 724 558 625 568 570 573 578 589 587
+1 720 722 681 679 677 675 673 671 669 667 665
+1 720 722 724 560
+1 586 588
+1 586 588 579 572 571 569 565 554 735 733 731 729 727
+1 591 595 596 598 628 634 638
+2 584 579 572 571 569 565 554
+1 584 580 577 616 618 559 725 733 731 729 727
+1 593 604 689 685 683 669
+3 303 304 316 233 230 234 499
+2 584 580
+1 310 534 546 552 285 283 278 286 541 533 529 527
+1 711 709 707 705 703 701 699 697 695 693 574 583 601 652 712 714 716 718
+3 340 91 88 102 548 479 477 475 365
+1 338 454 423 249 250 315 312 307 304 316 233 230 234 499
+2 149 150 507 225 183 184 346 193 190 53 50 56 392 363 360
+1 350 399 396 87 84 75 76 81 78 1 2 142 428 531
+2 149 150 507 225 183 184 346
+1 747 574 583 601 652
+2 747 569 624 562
+1 372 513 433 434
+2 661 659 657 655 637 635 629 599 597 594 586 588
+1 640 609 607 626
+1 664 666
+1 380 291 195 196 383 384 521 523
+1 378 181 123 124 260 262 300 400 438
+1 390 369 370 525
+1 589 587 595 596 598 628 634 636 654 656 658 662
+1 627 606 608 691 687 683 669
+2 31 25 26 23 20 28 34 217 214 246 95 96
+1 31 25 26 23 20 28 32 177 174 389 390 369 370 525
+2 229 226 416 543 465 239 242
+1 726 728 730 732 724 560 605 602 612 601 652 712 714 716 718
+1 667 665 639 635 629
+1 446 448 452 501 459 456 472 387 375 376 514
+1 482 536 437 203 159 160 523
+2 167 168 207 204 208 121 109 112 320 516 515
+2 484 495 492 496 491 201 198 281 278 286 541 533 529 527
+1 129 126 405 402 189 186 71 72 430 539
+2 377 380 291 195 196 383 384 521 523
+
+# Human-Readable Line Plan
+f=4   IC   AmsterdamCentraal - AmsterdamAmstel - UtrechtCentraal - Hertogenbosch's  (54.9 min)
+f=4   SPR  Eindhoven - EindhovenStrijp-S - Best - Boxtel - Oisterwijk - Tilburg  (30.1 min)
+f=4   IC   Eindhoven - Helmond - Deurne - Venlo  (35.0 min)
+f=4   SPR  Gouda - LansingerlandZoetermeer - ZoetermeerOost - Zoetermeer - DenHaagYpenburg - Voorburg - DenHaagCentraal  (25.5 min)
+f=3   IC   AlmereCentrum - Hilversum - UtrechtCentraal  (28.2 min)
+f=3   SPR  Breda - Etten-Leur - Roosendaal  (15.4 min)
+f=3   SPR  Baarn - Amersfoort - AmersfoortSchothorst - AmersfoortVathorst - Nijkerk - Putten - Ermelo - Harderwijk - Nunspeet - Harde't - Wezep - Zwolle  (65.4 min)
+f=3   IC   Dordrecht - RotterdamCentraal - RotterdamAlexander - Gouda - UtrechtCentraal - Amersfoort - Apeldoorn - Deventer - Almelo - Hengelo - Enschede  (146.6 min)
+f=3   SPR  Dordrecht - Zwijndrecht - Barendrecht - RotterdamLombardijen - RotterdamZuid - RotterdamBlaak - RotterdamCentraal - RotterdamNoord - RotterdamAlexander - CapelleSchollevaar - Nieuwerkerka/dIJssel - Gouda  (46.2 min)
+f=3   SPR  Deventer - Twello - ApeldoornOsseveld - Apeldoorn - Amersfoort - DenDolder - Bilthoven - UtrechtOvervecht - UtrechtCentraal  (61.6 min)
+f=3   SPR  DenHaagCentraal - DenHaagHS - DenHaagMoerwijk - Rijswijk - Delft - DelftZuid - SchiedamCentrum - RotterdamCentraal  (26.3 min)
+f=3   SPR  Hoofddorp - Schiphol - AmsterdamLelylaan - AmsterdamSloterdijk - Zaandam - ZaandamKogerveld - PurmerendWeidevenne - Purmerend - PurmerendOverwhere - Hoorn  (51.7 min)
+f=2   IC   Arnhem - Dieren - Zutphen - Deventer - Olst - Wijhe - Zwolle - LelystadCentrum  (82.0 min)
+f=2   IC   Arnhem - Ede-Wageningen - Driebergen-Zeist - UtrechtCentraal - AmsterdamBijlmerArenA - AmsterdamZuid - Schiphol  (68.2 min)
+f=2   SPR  Arnhem - Oosterbeek - Wolfheze - Ede-Wageningen - Veenendaal-deKlomp - Maarn - Driebergen-Zeist - Bunnik - UtrechtVaartscheRijn - UtrechtCentraal  (50.3 min)
+f=2   IC   Alkmaar - Heiloo - Castricum - Zaandam - AmsterdamSloterdijk - Schiphol - RotterdamCentraal  (64.8 min)
+f=2   SPR  AmsterdamCentraal - AmsterdamMuiderpoort - AmsterdamAmstel - Duivendrecht - AmsterdamBijlmerArenA - AmsterdamHolendrecht - Abcoude - Breukelen - Woerden - GoudaGoverwelle - Gouda  (49.9 min)
+f=2   SPR  AmsterdamCentraal - AmsterdamSloterdijk - Halfweg-Zwanemburg - HaarlemSpaarnwoude - Haarlem - Heemstede-Aerdenhout - Hillegom - Voorhout - LeidenCentraal  (42.9 min)
+f=2   SPR  Breukelen - Maarssen - UtrechtZuilen - UtrechtCentraal - UtrechtVaartscheRijn - UtrechtLunetten - Houten - HoutenCastellum - Culemborg - Geldermalsen - TielPassewaaij - Tiel  (49.0 min)
+f=2   SPR  Deventer - DeventerColmschate - Holten - Rijssen - Wierden - Almelo - AlmelodeRiet - Borne - Hengelo - EnschedeDrienerlo - Enschede  (55.1 min)
+f=2   IC   Deventer - Zutphen - Dieren - Arnhem - Nijmegen - Oss - Hertogenbosch's  (74.4 min)
+f=2   IC   Eindhoven - Weert - Roermond - Sittard - Maastricht  (65.7 min)
+f=2   SPR  Eindhoven - EindhovenStrijp-S - Best - Boxtel - Vught - Hertogenbosch's - Hertogenbosch'sOost - Rosmalen - OssWest - Oss  (46.7 min)
+f=2   IC   DenHaagCentraal - LeidenCentraal - Heemstede-Aerdenhout - Haarlem - AmsterdamSloterdijk - AmsterdamCentraal - AlmereCentrum - LelystadCentrum  (80.4 min)
+f=2   IC   DenHaagCentraal - LeidenCentraal - Schiphol  (24.5 min)
+f=2   SPR  Haarlem - Bloemendaal - SantpoortZuid - SantpoortNoord - Driehuis - Beverwijk - Heemskerk - Uitgeest - Castricum - Heiloo - Alkmaar - AlkmaarNoord - Heerhugowaard - Obdam - Hoorn - HoornKersenboogerd  (64.1 min)
+f=2   SPR  Haarlem - Bloemendaal - SantpoortZuid - SantpoortNoord - Driehuis - Beverwijk - Heemskerk - Uitgeest  (22.9 min)
+f=2   IC   Hoorn - AmsterdamSloterdijk - AmsterdamCentraal - Hilversum - UtrechtCentraal  (61.5 min)
+f=2   IC   Heerlen - Sittard - Roermond - Weert - Eindhoven - Tilburg - Breda - RotterdamCentraal - SchiedamCentrum - Delft - DenHaagHS - DenHaagLaanvanNOI - LeidenCentraal  (158.3 min)
+f=2   SPR  LelystadCentrum - AlmereOostvaarders - AlmereBuiten - AlmereParkwijk - AlmereCentrum - AlmereMuziekwijk - AlmerePoort - Weesp - DiemenZuid - Duivendrecht - AmsterdamRAI - AmsterdamZuid - Schiphol  (58.3 min)
+f=2   SPR  LelystadCentrum - Dronten - KampenZuid - Zwolle - Wijhe - Olst - Deventer - Zutphen  (64.4 min)
+f=2   SPR  RotterdamLombardijen - Barendrecht - Zwijndrecht - Dordrecht - DordrechtZuid - LageZwaluwe - BredaPrinsenbeek - Breda - Gilze-Rijen - TilburgReeshof - TilburgUniversiteit - Tilburg  (58.2 min)
+f=2   SPR  RotterdamLombardijen - RotterdamZuid - RotterdamBlaak - RotterdamCentraal - RotterdamNoord - RotterdamAlexander - CapelleSchollevaar - Nieuwerkerka/dIJssel - Gouda - GoudaGoverwelle - Woerden - Vleuten - UtrechtTerwijde - UtrechtLeidscheRijn - UtrechtCentraal  (62.3 min)
+f=2   SPR  Tilburg - Hertogenbosch's - Zaltbommel - Geldermalsen - Culemborg - HoutenCastellum - Houten - UtrechtLunetten - UtrechtVaartscheRijn - UtrechtCentraal  (58.2 min)
+f=1   IC   Arnhem - Ede-Wageningen - Driebergen-Zeist - UtrechtCentraal - AmsterdamAmstel - AmsterdamCentraal - AmsterdamSloterdijk - Zaandam - Castricum - Heiloo - Alkmaar - AlkmaarNoord - Heerhugowaard - Schagen  (118.2 min)
+f=1   IC   AlmereCentrum - AmsterdamZuid - Schiphol - RotterdamCentraal - Dordrecht - Roosendaal  (89.7 min)
+f=1   SPR  AlmereBuiten - AlmereParkwijk - AlmereCentrum - AlmereMuziekwijk - AlmerePoort - Weesp - DiemenZuid - Duivendrecht - AmsterdamRAI - AmsterdamZuid - Schiphol - Hoofddorp - NieuwVennep - Sassenheim - LeidenCentraal  (66.2 min)
+f=1   SPR  AlmereOostvaarders - AlmereBuiten - AlmereParkwijk - AlmereCentrum - AlmereMuziekwijk - AlmerePoort - Weesp - Diemen - AmsterdamSciencepark - AmsterdamMuiderpoort - AmsterdamCentraal - AmsterdamSloterdijk - Zaandam - KoogaandeZaan - ZaandijkZaanseSchans - Wormerveer - Krommenie-Assendelft - Uitgeest  (69.9 min)
+f=1   SPR  Amersfoort - Apeldoorn  (26.2 min)
+f=1   IC   AmersfoortSchothorst - Amersfoort - Hilversum - AmsterdamCentraal - AmsterdamSloterdijk - Zaandam - Hoorn  (66.7 min)
+f=1   SPR  Alkmaar - AlkmaarNoord - Heerhugowaard - Schagen - AnnaPaulowna - DenHelderZuid - DenHelder  (34.6 min)
+f=1   SPR  Alkmaar - Heiloo - Castricum - Uitgeest - Krommenie-Assendelft - Wormerveer - ZaandijkZaanseSchans - KoogaandeZaan - Zaandam - AmsterdamSloterdijk - AmsterdamLelylaan - Schiphol - Hoofddorp  (55.5 min)
+f=1   SPR  AlphenaandenRijn - Bodegraven - Woerden - Vleuten - UtrechtTerwijde - UtrechtLeidscheRijn - UtrechtCentraal - UtrechtOvervecht - Bilthoven - DenDolder - Amersfoort - AmersfoortSchothorst - AmersfoortVathorst  (61.9 min)
+f=1   SPR  AlphenaandenRijn - LeidenLammenschans - LeidenCentraal  (13.2 min)
+f=1   SPR  AmsterdamCentraal - AmsterdamMuiderpoort - AmsterdamSciencepark - Diemen - Weesp - Naarden-Bussum - BussumZuid - HilversumMediapark - Hilversum - Baarn - Amersfoort - AmersfoortSchothorst - AmersfoortVathorst  (52.9 min)
+f=1   SPR  AmsterdamCentraal - AmsterdamSloterdijk - Zaandam - ZaandamKogerveld - PurmerendWeidevenne - Purmerend - PurmerendOverwhere - Hoorn - HoornKersenboogerd - Hoogkarspel - Bovenkarspel-Grootebroek - BovenkarspelFlora - Enkhuizen  (62.5 min)
+f=1   SPR  AmsterdamCentraal - AmsterdamSloterdijk - AmsterdamLelylaan - Schiphol - Hoofddorp - NieuwVennep - Sassenheim - LeidenCentraal - DeVink - Voorschoten - DenHaagMariahoeve - DenHaagLaanvanNOI - DenHaagCentraal  (56.8 min)
+f=1   SPR  AmsterdamCentraal - AmsterdamSloterdijk - Halfweg-Zwanemburg - HaarlemSpaarnwoude - Haarlem - Heemstede-Aerdenhout - Hillegom - Voorhout - LeidenCentraal - DeVink - Voorschoten - DenHaagMariahoeve - DenHaagLaanvanNOI - DenHaagCentraal  (61.4 min)
+f=1   SPR  AmsterdamCentraal - AmsterdamMuiderpoort - AmsterdamAmstel - Duivendrecht - AmsterdamBijlmerArenA - AmsterdamHolendrecht - Abcoude - Breukelen - Maarssen - UtrechtZuilen - UtrechtCentraal  (40.2 min)
+f=1   IC   AmsterdamCentraal - AlmereCentrum - LelystadCentrum - Zwolle  (59.7 min)
+f=1   SPR  AmsterdamZuid - Schiphol - Hoofddorp - NieuwVennep - Sassenheim - LeidenCentraal  (27.4 min)
+f=1   SPR  AmsterdamZuid - AmsterdamRAI - AmsterdamBijlmerArenA - AmsterdamHolendrecht - Abcoude - Breukelen - Maarssen - UtrechtZuilen - UtrechtCentraal - UtrechtVaartscheRijn - Bunnik - Driebergen-Zeist - Maarn - VeenendaalWest - VeenendaalCentrum  (64.4 min)
+f=1   SPR  AmersfoortVathorst - Nijkerk - Putten - Ermelo - Harderwijk - Nunspeet - Harde't - Wezep - Zwolle  (50.5 min)
+f=1   SPR  Breda - Gilze-Rijen - TilburgReeshof - TilburgUniversiteit - Tilburg - Oisterwijk - Boxtel - Best - EindhovenStrijp-S - Eindhoven  (51.3 min)
+f=1   SPR  Breda - Gilze-Rijen - TilburgReeshof - TilburgUniversiteit - Tilburg - Hertogenbosch's - Hertogenbosch'sOost - Rosmalen - OssWest - Oss  (54.1 min)
+f=1   SPR  BergenopZoom - Roosendaal - Oudenbosch - Zevenbergen - LageZwaluwe - DordrechtZuid - Dordrecht  (40.5 min)
+f=1   SPR  BergenopZoom - Roosendaal - Etten-Leur - Breda - Gilze-Rijen - TilburgReeshof - TilburgUniversiteit - Tilburg - Hertogenbosch's  (62.3 min)
+f=1   SPR  Breukelen - Abcoude - AmsterdamHolendrecht - AmsterdamBijlmerArenA - Duivendrecht - AmsterdamAmstel - AmsterdamMuiderpoort - AmsterdamCentraal - AmsterdamSloterdijk - Zaandam - KoogaandeZaan - ZaandijkZaanseSchans - Wormerveer - Krommenie-Assendelft - Uitgeest  (57.7 min)
+f=1   SPR  Baarn - Hilversum - HilversumMediapark - BussumZuid - Naarden-Bussum - Weesp - DiemenZuid - Duivendrecht - AmsterdamRAI - AmsterdamZuid - Schiphol - Hoofddorp - NieuwVennep - Sassenheim - LeidenCentraal  (67.3 min)
+f=1   SPR  Baarn - Soestdijk - Soest - SoestZuid - DenDolder - Bilthoven - UtrechtOvervecht - UtrechtCentraal  (28.1 min)
+f=1   SPR  Baarn - Hilversum - HilversumMediapark - BussumZuid - Naarden-Bussum - Weesp - Diemen - AmsterdamSciencepark - AmsterdamMuiderpoort - AmsterdamCentraal - AmsterdamSloterdijk - Zaandam - KoogaandeZaan - ZaandijkZaanseSchans - Wormerveer - Krommenie-Assendelft - Uitgeest  (67.9 min)
+f=1   SPR  Baarn - Hilversum - HilversumMediapark - BussumZuid - Naarden-Bussum - Weesp - Diemen - AmsterdamSciencepark - AmsterdamMuiderpoort - AmsterdamCentraal - AmsterdamSloterdijk - Halfweg-Zwanemburg - HaarlemSpaarnwoude - Haarlem - Overveen - ZandvoortaanZee  (66.7 min)
+f=1   SPR  Driebergen-Zeist - Bunnik - UtrechtVaartscheRijn - UtrechtCentraal - UtrechtLeidscheRijn - UtrechtTerwijde - Vleuten - Woerden - Bodegraven - AlphenaandenRijn - LeidenLammenschans - LeidenCentraal  (61.9 min)
+f=1   SPR  Driebergen-Zeist - Maarn - Veenendaal-deKlomp - Ede-Wageningen - Wolfheze - Oosterbeek - Arnhem - ArnhemZuid - Elst - NijmegenLent - Nijmegen  (56.3 min)
+f=1   SPR  Dordrecht - Zwijndrecht - Barendrecht - RotterdamLombardijen - RotterdamZuid - RotterdamBlaak - RotterdamCentraal - SchiedamCentrum - DelftZuid - Delft - Rijswijk - DenHaagMoerwijk - DenHaagHS - DenHaagCentraal  (50.3 min)
+f=1   IC   Dordrecht - RotterdamCentraal - SchiedamCentrum - Delft - DenHaagHS - DenHaagLaanvanNOI - LeidenCentraal - Schiphol - AmsterdamSloterdijk - Hoorn  (96.1 min)
+f=1   SPR  Deurne - HelmondBrouwhuis - Helmond - Helmond'tHout - HelmondBrandevoort - Eindhoven - EindhovenStrijp-S - Best - Boxtel - Vught - Hertogenbosch's  (50.7 min)
+f=1   SPR  Deurne - Horst-Sevenum - Blerick - Venlo  (21.5 min)
+f=1   SPR  Deventer - Twello - ApeldoornOsseveld - Apeldoorn - Amersfoort - Baarn - Hilversum  (54.6 min)
+f=1   SPR  Deventer - Zutphen - Brummen - Dieren - Rheden - Velp - ArnhemPresikhaaf - ArnhemVelperpoort - Arnhem - ArnhemZuid - Elst - NijmegenLent - Nijmegen  (60.3 min)
+f=1   SPR  Ede-Wageningen - Wolfheze - Oosterbeek - Arnhem - ArnhemZuid - Elst - NijmegenLent - Nijmegen - NijmegenGoffert - NijmegenDukenburg - Wijchen - Ravenstein - Oss  (57.7 min)
+f=1   SPR  Eindhoven - EindhovenStrijp-S - Best - Boxtel - Vught - Hertogenbosch's - Zaltbommel - Geldermalsen  (44.5 min)
+f=1   IC   Enschede - Hengelo - Almelo - Deventer - Apeldoorn - Amersfoort - Hilversum - Duivendrecht - AmsterdamZuid - Schiphol - LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS  (148.7 min)
+f=1   IC   Enschede - Hengelo - Almelo - Deventer - Apeldoorn - Amersfoort - Hilversum - AmsterdamCentraal - AmsterdamSloterdijk - Zaandam - Castricum - Heiloo - Alkmaar - AlkmaarNoord - Heerhugowaard - Schagen  (165.1 min)
+f=1   IC   Groningen - Assen - Zwolle - LelystadCentrum - AlmereCentrum - AmsterdamCentraal - AmsterdamSloterdijk - Haarlem - Heemstede-Aerdenhout - LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS  (165.4 min)
+f=1   IC   Groningen - Assen - Zwolle - Amersfoort - Hilversum - AmsterdamCentraal - AmsterdamSloterdijk - Haarlem - Heemstede-Aerdenhout - LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS  (177.1 min)
+f=1   IC   Groningen - Assen - Zwolle - Wijhe - Olst - Deventer - Zutphen - Dieren - Arnhem - Nijmegen - Oss - Hertogenbosch's  (155.2 min)
+f=1   IC   Groningen - Assen - Zwolle - Amersfoort - UtrechtCentraal  (111.4 min)
+f=1   IC   DenHaagHS - DenHaagLaanvanNOI - LeidenCentraal  (10.0 min)
+f=1   IC   DenHaagHS - DenHaagLaanvanNOI - LeidenCentraal - Heemstede-Aerdenhout - Haarlem - AmsterdamSloterdijk - AmsterdamCentraal - AlmereCentrum - LelystadCentrum - Zwolle - Meppel - Steenwijk - Heerenveen - Leeuwarden  (169.9 min)
+f=1   IC   DenHaagCentraal - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal - Breda - Tilburg - Hertogenbosch's  (75.2 min)
+f=1   IC   DenHaagCentraal - LeidenCentraal - Schiphol - AmsterdamZuid - Duivendrecht - Hilversum - Amersfoort - Zwolle - Meppel - Steenwijk - Heerenveen - Leeuwarden  (168.4 min)
+f=1   IC   DenHaagCentraal - Gouda - UtrechtCentraal - Veenendaal-deKlomp - Ede-Wageningen - Arnhem - Nijmegen  (88.7 min)
+f=1   SPR  DenHaagCentraal - Voorburg - DenHaagYpenburg - Zoetermeer - ZoetermeerOost - LansingerlandZoetermeer - Gouda - GoudaGoverwelle - Woerden - Vleuten - UtrechtTerwijde - UtrechtLeidscheRijn - UtrechtCentraal  (55.3 min)
+f=1   IC   DenHelder - DenHelderZuid - AnnaPaulowna - Schagen - Heerhugowaard - AlkmaarNoord - Alkmaar - Heiloo - Castricum - Zaandam - AmsterdamSloterdijk - Schiphol - RotterdamCentraal - Dordrecht - Roosendaal - BergenopZoom - Goes - Middelburg - Vlissingen  (192.7 min)
+f=1   SPR  Hoofddorp - NieuwVennep - Sassenheim - LeidenCentraal - DeVink - Voorschoten - DenHaagMariahoeve - DenHaagLaanvanNOI - DenHaagHS - DenHaagMoerwijk - Rijswijk - Delft - DelftZuid - SchiedamCentrum - RotterdamCentraal  (58.4 min)
+f=1   SPR  Haarlem - HaarlemSpaarnwoude - Halfweg-Zwanemburg - AmsterdamSloterdijk - AmsterdamCentraal - AmsterdamMuiderpoort - AmsterdamAmstel - Duivendrecht - AmsterdamBijlmerArenA - AmsterdamHolendrecht - Abcoude - Breukelen - Maarssen - UtrechtZuilen - UtrechtCentraal  (60.0 min)
+f=1   IC   Hoorn - AmsterdamSloterdijk - Schiphol - RotterdamCentraal - Dordrecht - Roosendaal  (99.4 min)
+f=1   SPR  Heerenveen - Wolvega - Steenwijk - Meppel - Zwolle  (42.0 min)
+f=1   IC   Hertogenbosch's - UtrechtCentraal - Woerden - AlphenaandenRijn - LeidenCentraal  (69.6 min)
+f=1   IC   Hertogenbosch's - Oss - Nijmegen  (28.1 min)
+f=1   SPR  Hertogenbosch's - Zaltbommel - Geldermalsen - Culemborg - HoutenCastellum - Houten - UtrechtLunetten - UtrechtVaartscheRijn - UtrechtCentraal  (42.7 min)
+f=1   SPR  Hertogenbosch's - Vught - Boxtel - Best - EindhovenStrijp-S - Eindhoven - Geldrop - Heeze - Maarheeze - Weert  (52.7 min)
+f=1   SPR  Hilversum - HilversumSportpark - HollandscheRading - UtrechtOvervecht - UtrechtCentraal  (16.3 min)
+f=1   IC   LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal - Breda - Tilburg - Eindhoven - Weert - Roermond - Sittard - Maastricht  (160.5 min)
+f=1   IC   LeidenCentraal - AlphenaandenRijn - Woerden - UtrechtCentraal - Driebergen-Zeist - Ede-Wageningen - Arnhem - Nijmegen  (92.3 min)
+f=1   SPR  LelystadCentrum - AlmereOostvaarders - AlmereBuiten - AlmereParkwijk - AlmereCentrum - AlmereMuziekwijk - AlmerePoort - Naarden-Bussum - BussumZuid - HilversumMediapark - Hilversum - HilversumSportpark - HollandscheRading - UtrechtOvervecht - UtrechtCentraal  (65.2 min)
+f=1   IC   Leeuwarden - Heerenveen - Steenwijk - Meppel - Zwolle - Amersfoort - UtrechtCentraal - Gouda - RotterdamAlexander - RotterdamCentraal - Dordrecht - Roosendaal - BergenopZoom - Goes - Middelburg - Vlissingen  (245.2 min)
+f=1   IC   Nijmegen - Oss - Hertogenbosch's - Tilburg - Breda - RotterdamCentraal  (83.1 min)
+f=1   SPR  Nijmegen - NijmegenGoffert - NijmegenDukenburg - Wijchen - Ravenstein - Oss - OssWest - Rosmalen - Hertogenbosch'sOost - Hertogenbosch's - Tilburg - TilburgUniversiteit  (60.9 min)
+f=1   SPR  Rhenen - VeenendaalCentrum - VeenendaalWest - Maarn - Driebergen-Zeist - Bunnik - UtrechtVaartscheRijn - UtrechtCentraal  (36.2 min)
+f=1   SPR  Roosendaal - BergenopZoom - Rilland-Bath - Krabbendijke - Kruiningen-Yerseke - Kapelle-Biezelinge - Goes - Arnemuiden - Middelburg - VlissingenSouburg - Vlissingen  (62.9 min)

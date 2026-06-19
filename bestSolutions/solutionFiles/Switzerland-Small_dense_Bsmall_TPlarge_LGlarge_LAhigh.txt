@@ -1,0 +1,62 @@
+﻿# Settings
+Instance: instances/Switzerland-Small
+ODMatrix: dense
+TotalVolume: 86401.4
+TransferPenalty: large (25)
+LineGeneration: large
+Budget: small (142)
+LineActivationCost: high
+Solver: PTNSolver-Karbstein
+RouteGeneration: large
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 7118791.0928
+Cost: 141.9300
+ComputationTimeSeconds: 3600.7
+OptimalityGap: 0.0078
+DirectTravelersEstimatePct: 72.66
+OneTransferEstimatePct: 24.64
+TwoPlusTransfersEstimatePct: 0.00
+ObjectiveActual: 7130160.3718
+UncoveredDemandActualPct: 0.00
+DirectTravelersActualPct: 71.60
+OneTransferActualPct: 24.31
+TwoPlusTransfersActualPct: 4.08
+
+# LinePlan
+3 24 14
+1 4 10 25 32
+2 13 52
+1 16 62
+1 15
+1 17 7 48 68
+1 18 53
+1 23 78
+1 22 73
+1 20 55 67 76 1 51 10 26
+1 30 71 45 8 49 2
+1 34 71 46 11
+1 35 1 50 7
+3 39 75 78 66
+1 43 34 71 45 8 49 3 78 65
+3 49 3
+
+# Human-Readable Line Plan
+f=3   IC   Fribourg/Freiburg - Bern - Thun  (48.7 min)
+f=3   IC   Luzern - Zug - ZurichHB - Winterthur - Schaffhausen  (86.2 min)
+f=3   IC   Olten - Aarau - ZurichHB  (43.1 min)
+f=2   IC   Bern - Olten - BaselSBB  (74.5 min)
+f=1   IC   Biel/Bienne - Bern - Fribourg/Freiburg - Lausanne - Geneve  (148.9 min)
+f=1   IC   Brig - Thun - Luzern  (123.7 min)
+f=1   IC   Brig - Martigny  (59.2 min)
+f=1   IC   BaselSBB - Biel/Bienne - Neuchatel - Yverdon-les-Bains - Fribourg/Freiburg  (147.2 min)
+f=1   IC   BaselSBB - Olten - Luzern  (69.6 min)
+f=1   IC   Chur - ZurichHB - Winterthur  (105.9 min)
+f=1   IC   Chur - Zug - Luzern  (106.8 min)
+f=1   IC   Chur - St.Gallen - Winterthur - ZurichHB - Aarau - Olten - Bern - Fribourg/Freiburg - Martigny  (346.5 min)
+f=1   IC   Geneve - Yverdon-les-Bains - Neuchatel - Biel/Bienne - Olten - Aarau - Schaffhausen  (236.8 min)
+f=1   IC   Lausanne - Yverdon-les-Bains - Neuchatel - Bern - Luzern  (165.9 min)
+f=1   IC   Luzern - Aarau - Olten - Biel/Bienne - Neuchatel  (125.2 min)
+f=1   IC   Martigny - Lausanne - Yverdon-les-Bains - Neuchatel - Biel/Bienne - Olten - Aarau - ZurichHB - Winterthur - St.Gallen  (289.5 min)

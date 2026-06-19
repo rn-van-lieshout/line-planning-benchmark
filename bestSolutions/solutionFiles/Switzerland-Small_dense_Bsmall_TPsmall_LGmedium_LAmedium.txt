@@ -1,0 +1,62 @@
+﻿# Settings
+Instance: instances/Switzerland-Small
+ODMatrix: dense
+TotalVolume: 86401.4
+TransferPenalty: small (5)
+LineGeneration: medium
+Budget: small (125)
+LineActivationCost: medium
+Solver: PTNSolver
+RouteGeneration: large
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 6516716.5190
+Cost: 124.9067
+ComputationTimeSeconds: 3602.9
+OptimalityGap: 0.0081
+DirectTravelersEstimatePct: 79.83
+OneTransferEstimatePct: 19.26
+TwoPlusTransfersEstimatePct: 0.44
+ObjectiveActual: 6546662.0196
+UncoveredDemandActualPct: 0.00
+DirectTravelersActualPct: 63.47
+OneTransferActualPct: 28.77
+TwoPlusTransfersActualPct: 7.76
+
+# LinePlan
+4 24 13 49 3
+1 4 10 25
+3 14
+1 16 62
+1 15 43 34
+1 17 7 48 69
+1 18 53
+2 18
+1 23 78
+1 20 55 67 76 1 50 7
+1 22
+1 29 31 28 71 45 8 49 2
+1 36 12
+3 39 75 78 66
+1 42 27
+1 49 3 78 65
+
+# Human-Readable Line Plan
+f=4   IC   Fribourg/Freiburg - Bern - Olten - Aarau - ZurichHB  (117.0 min)
+f=3   IC   Bern - Thun  (23.5 min)
+f=3   IC   Luzern - Zug - ZurichHB - Winterthur - Schaffhausen  (86.2 min)
+f=2   IC   BaselSBB - Olten  (25.8 min)
+f=1   IC   Biel/Bienne - Bern - Fribourg/Freiburg - Lausanne  (101.7 min)
+f=1   IC   Brig - Thun - Luzern  (123.7 min)
+f=1   IC   Brig - Martigny - Lausanne - Yverdon-les-Bains  (142.5 min)
+f=1   IC   BaselSBB - Biel/Bienne - Neuchatel - Yverdon-les-Bains - Geneve  (174.8 min)
+f=1   IC   BaselSBB - Olten - Luzern  (69.6 min)
+f=1   IC   Chur - ZurichHB - Winterthur  (105.9 min)
+f=1   IC   Chur - St.Gallen - Winterthur - ZurichHB - Aarau - Olten - Biel/Bienne - Neuchatel  (258.8 min)
+f=1   IC   Chur - Zug  (83.4 min)
+f=1   IC   Geneve - Lausanne - Fribourg/Freiburg - Yverdon-les-Bains - Neuchatel - Biel/Bienne - Olten - Aarau - Schaffhausen  (307.7 min)
+f=1   IC   Luzern - Bern - Neuchatel  (105.6 min)
+f=1   IC   Martigny - Fribourg/Freiburg - Neuchatel  (118.2 min)
+f=1   IC   Olten - Aarau - ZurichHB - Winterthur - St.Gallen  (106.8 min)

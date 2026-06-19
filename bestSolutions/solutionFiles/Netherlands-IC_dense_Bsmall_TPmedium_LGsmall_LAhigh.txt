@@ -1,0 +1,68 @@
+﻿# Settings
+Instance: instances/Netherlands-IC
+ODMatrix: dense
+TotalVolume: 169899.2
+TransferPenalty: medium (15)
+LineGeneration: small
+Budget: small (204)
+LineActivationCost: high
+Solver: PTNSolver
+RouteGeneration: medium
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 10912150.1606
+Cost: 203.9831
+ComputationTimeSeconds: 3601.4
+OptimalityGap: 0.0336
+DirectTravelersEstimatePct: 84.35
+OneTransferEstimatePct: 12.70
+TwoPlusTransfersEstimatePct: 0.29
+ObjectiveActual: 11854626.3866
+UncoveredDemandActualPct: 1.50
+DirectTravelersActualPct: 46.98
+OneTransferActualPct: 42.16
+TwoPlusTransfersActualPct: 9.36
+
+# LinePlan
+2 128 132 136 51 38
+3 10 14 20 29
+1 6 51 48 58
+2 145 143 141 139 15 57 60 87
+3 14 20 29 47
+1 76 80 82 100 102 104 108
+2 185 183 6 55 53 72
+2 83 81 75 45 43 40
+3 191 189 187 185 183 6 51 48 58
+3 166 168 170 4 71 14 16 19 24 35 33
+2 37 41 42 44 74 80 84
+2 30 26 23 13 0 181
+1 157 155 153 151 149 147 145 143 141 139 20 27 35 33 41 42 44 47 98 158 160 162 164
+2 195 139 15 57 60 135 131 129 115
+2 107 105 103 101 83 81 75
+1 86 69 67 22
+1 1 2 8 51 48 58 47 98 158 160 162 164
+2 172 174 176 178 127 125 123 121 119 117 115 113 111 85 81 78 96
+1 74 80 82 90 92 94
+
+# Human-Readable Line Plan
+f=3   IC   AlmereCentrum - AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - RotterdamCentraal  (60.4 min)
+f=3   IC   AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - RotterdamCentraal - Dordrecht  (54.4 min)
+f=3   IC   Enschede - Hengelo - Almelo - Deventer - Apeldoorn - Amersfoort - UtrechtCentraal - Gouda - RotterdamAlexander - RotterdamCentraal  (132.6 min)
+f=3   IC   Groningen - Assen - Zwolle - Amersfoort - Hilversum - AmsterdamCentraal - AmsterdamSloterdijk - Haarlem - Heemstede-Aerdenhout - LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS  (177.1 min)
+f=2   IC   Arnhem - Ede-Wageningen - Driebergen-Zeist - UtrechtCentraal - Gouda - DenHaagCentraal  (75.6 min)
+f=2   IC   Alkmaar - Heiloo - Castricum - Zaandam - AmsterdamSloterdijk - AmsterdamCentraal - AmsterdamAmstel - UtrechtCentraal - Hertogenbosch's  (90.2 min)
+f=2   IC   Deventer - Apeldoorn - Amersfoort - UtrechtCentraal - Woerden - AlphenaandenRijn - LeidenCentraal  (92.4 min)
+f=2   IC   Eindhoven - Tilburg - Breda - RotterdamCentraal - SchiedamCentrum - Delft - DenHaagHS  (80.8 min)
+f=2   IC   DenHaagCentraal - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal - Breda - Tilburg - Hertogenbosch's  (75.2 min)
+f=2   IC   DenHaagCentraal - LeidenCentraal - Schiphol - AmsterdamZuid - AlmereCentrum - LelystadCentrum - Zwolle  (93.5 min)
+f=2   IC   Hoorn - Zaandam - AmsterdamSloterdijk - AmsterdamCentraal - AmsterdamAmstel - UtrechtCentraal - Veenendaal-deKlomp - Ede-Wageningen - Arnhem - Nijmegen  (111.1 min)
+f=2   IC   Heerlen - Sittard - Roermond - Weert - Eindhoven - Tilburg - Breda - RotterdamCentraal  (127.2 min)
+f=2   IC   Leeuwarden - Heerenveen - Steenwijk - Meppel - Zwolle - Wijhe - Olst - Deventer - Zutphen - Dieren - Arnhem - Nijmegen - Oss - Hertogenbosch's - Tilburg - Breda - Etten-Leur - Roosendaal  (207.8 min)
+f=1   IC   Amersfoort - UtrechtCentraal - Gouda - RotterdamAlexander - RotterdamCentraal  (50.5 min)
+f=1   IC   Dordrecht - Breda - Tilburg - Eindhoven - Weert - Roermond - Sittard - Maastricht  (124.3 min)
+f=1   IC   DenHelder - DenHelderZuid - AnnaPaulowna - Schagen - Heerhugowaard - AlkmaarNoord - Alkmaar - Heiloo - Castricum - Zaandam - AmsterdamSloterdijk - Schiphol - LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal - Dordrecht - Roosendaal - BergenopZoom - Goes - Middelburg - Vlissingen  (213.8 min)
+f=1   IC   Hertogenbosch's - UtrechtCentraal - AmsterdamBijlmerArenA - AmsterdamZuid - Schiphol  (58.7 min)
+f=1   IC   LelystadCentrum - AlmereCentrum - Hilversum - UtrechtCentraal - Gouda - RotterdamAlexander - RotterdamCentraal - Dordrecht - Roosendaal - BergenopZoom - Goes - Middelburg - Vlissingen  (172.5 min)
+f=1   IC   RotterdamCentraal - Breda - Tilburg - Eindhoven - Helmond - Deurne - Venlo  (98.6 min)

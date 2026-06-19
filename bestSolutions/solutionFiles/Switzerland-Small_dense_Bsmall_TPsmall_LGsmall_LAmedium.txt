@@ -1,0 +1,64 @@
+﻿# Settings
+Instance: instances/Switzerland-Small
+ODMatrix: dense
+TotalVolume: 86401.4
+TransferPenalty: small (5)
+LineGeneration: small
+Budget: small (125)
+LineActivationCost: medium
+Solver: PTN-BendersSolver
+RouteGeneration: large
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 6584028.0384
+Cost: 124.8240
+ComputationTimeSeconds: 3601.1
+OptimalityGap: 0.0088
+DirectTravelersEstimatePct: 69.14
+OneTransferEstimatePct: 29.90
+TwoPlusTransfersEstimatePct: 0.39
+ObjectiveActual: 6568010.7656
+UncoveredDemandActualPct: 0.11
+DirectTravelersActualPct: 67.45
+OneTransferActualPct: 27.74
+TwoPlusTransfersActualPct: 4.70
+
+# LinePlan
+1 27
+1 4
+2 13 52
+1 16 60 10
+1 15 43 32
+1 16 62
+1 17 7 48 70
+1 18 53
+1 23 78 66
+1 22
+1 30 71 45 8 49 3 78 66
+2 31 24 13 49 3 78 65
+3 39 75 78
+1 36 10 26
+2 46 14
+3 49 3
+1 57 1 50 7 48
+
+# Human-Readable Line Plan
+f=3   IC   Luzern - Zug - ZurichHB - Winterthur  (61.7 min)
+f=3   IC   Olten - Aarau - ZurichHB  (43.1 min)
+f=2   IC   Bern - Olten - BaselSBB  (74.5 min)
+f=2   IC   Lausanne - Fribourg/Freiburg - Bern - Olten - Aarau - ZurichHB - Winterthur - St.Gallen  (232.2 min)
+f=2   IC   Neuchatel - Bern - Thun  (57.3 min)
+f=1   IC   Fribourg/Freiburg - Neuchatel  (34.0 min)
+f=1   IC   Biel/Bienne - Bern  (25.1 min)
+f=1   IC   Brig - Thun - Bern - Fribourg/Freiburg  (105.2 min)
+f=1   IC   Brig - Martigny - Lausanne - Geneve  (158.3 min)
+f=1   IC   Brig - Thun - Luzern  (123.7 min)
+f=1   IC   BaselSBB - Biel/Bienne - Neuchatel - Yverdon-les-Bains - Lausanne  (139.1 min)
+f=1   IC   BaselSBB - Olten - Luzern  (69.6 min)
+f=1   IC   Chur - ZurichHB - Winterthur - Schaffhausen  (130.4 min)
+f=1   IC   Chur - Zug  (83.4 min)
+f=1   IC   Geneve - Yverdon-les-Bains - Neuchatel - Biel/Bienne - Olten - Aarau - ZurichHB - Winterthur - Schaffhausen  (252.9 min)
+f=1   IC   Luzern - Bern - Fribourg/Freiburg - Martigny  (181.2 min)
+f=1   IC   Schaffhausen - Aarau - Olten - Biel/Bienne - Neuchatel - Yverdon-les-Bains  (169.7 min)

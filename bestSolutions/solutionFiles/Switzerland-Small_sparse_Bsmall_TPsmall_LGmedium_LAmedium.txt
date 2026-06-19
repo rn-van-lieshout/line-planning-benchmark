@@ -1,0 +1,62 @@
+﻿# Settings
+Instance: instances/Switzerland-Small
+ODMatrix: sparse
+TotalVolume: 93045.2
+TransferPenalty: small (5)
+LineGeneration: medium
+Budget: small (125)
+LineActivationCost: medium
+Solver: PTNSolver-Karbstein
+RouteGeneration: large
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 6983884.4232
+Cost: 124.3367
+ComputationTimeSeconds: 3601.2
+OptimalityGap: 0.0222
+DirectTravelersEstimatePct: 70.20
+OneTransferEstimatePct: 27.33
+TwoPlusTransfersEstimatePct: 0.14
+ObjectiveActual: 6939199.9808
+UncoveredDemandActualPct: 0.93
+DirectTravelersActualPct: 68.06
+OneTransferActualPct: 25.21
+TwoPlusTransfersActualPct: 5.80
+
+# LinePlan
+3 24 14
+1 4
+2 13 52
+1 16 62
+1 15 43 34
+1 17 7 48 70
+1 18 53
+1 22 73
+1 23 78 66
+1 30 71 46 11
+1 29 31 24 13 49 3 78 65
+2 39 75 78 66
+1 42 28 71 45 8 49 3 78 65
+2 45 8 49 3 78
+3 49 2
+2 75
+
+# Human-Readable Line Plan
+f=3   IC   Fribourg/Freiburg - Bern - Thun  (48.7 min)
+f=3   IC   Olten - Aarau - Schaffhausen  (70.3 min)
+f=2   IC   Bern - Olten - BaselSBB  (74.5 min)
+f=2   IC   Luzern - Zug - ZurichHB - Winterthur - Schaffhausen  (86.2 min)
+f=2   IC   Neuchatel - Biel/Bienne - Olten - Aarau - ZurichHB - Winterthur  (132.4 min)
+f=2   IC   Zug - ZurichHB  (19.5 min)
+f=1   IC   Biel/Bienne - Bern  (25.1 min)
+f=1   IC   Brig - Thun - Luzern  (123.7 min)
+f=1   IC   Brig - Martigny - Lausanne - Yverdon-les-Bains  (142.5 min)
+f=1   IC   BaselSBB - Biel/Bienne - Neuchatel - Yverdon-les-Bains - Lausanne  (139.1 min)
+f=1   IC   BaselSBB - Olten - Luzern  (69.6 min)
+f=1   IC   Chur - Zug - Luzern  (106.8 min)
+f=1   IC   Chur - ZurichHB - Winterthur - Schaffhausen  (130.4 min)
+f=1   IC   Geneve - Yverdon-les-Bains - Neuchatel - Bern - Luzern  (201.6 min)
+f=1   IC   Geneve - Lausanne - Fribourg/Freiburg - Bern - Olten - Aarau - ZurichHB - Winterthur - St.Gallen  (279.3 min)
+f=1   IC   Martigny - Fribourg/Freiburg - Yverdon-les-Bains - Neuchatel - Biel/Bienne - Olten - Aarau - ZurichHB - Winterthur - St.Gallen  (329.9 min)

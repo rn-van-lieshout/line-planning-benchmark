@@ -1,0 +1,64 @@
+﻿# Settings
+Instance: instances/Switzerland-Small
+ODMatrix: dense
+TotalVolume: 86401.4
+TransferPenalty: medium (15)
+LineGeneration: small
+Budget: small (142)
+LineActivationCost: high
+Solver: PTN-BendersSolver
+RouteGeneration: large
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 6912767.9242
+Cost: 141.3293
+ComputationTimeSeconds: 3601.1
+OptimalityGap: 0.0095
+DirectTravelersEstimatePct: 70.24
+OneTransferEstimatePct: 27.04
+TwoPlusTransfersEstimatePct: 1.00
+ObjectiveActual: 6911835.9278
+UncoveredDemandActualPct: 0.81
+DirectTravelersActualPct: 69.47
+OneTransferActualPct: 24.53
+TwoPlusTransfersActualPct: 5.18
+
+# LinePlan
+2 24 14
+1 4
+3 13 49 3
+1 15 43 32
+1 16 60 12 48
+1 17 7 48 70
+2 18 53
+1 19
+1 22 73
+1 23
+1 29 31 24 11
+1 30 71 45 8 49 3 78 65
+1 31 24 13 49 3 78 65
+3 39 75 78 66
+1 38
+1 42 27
+1 45 8 49 2
+
+# Human-Readable Line Plan
+f=3   IC   Bern - Olten - Aarau - ZurichHB  (91.8 min)
+f=3   IC   Luzern - Zug - ZurichHB - Winterthur - Schaffhausen  (86.2 min)
+f=2   IC   Fribourg/Freiburg - Bern - Thun  (48.7 min)
+f=2   IC   BaselSBB - Olten - Luzern  (69.6 min)
+f=1   IC   Biel/Bienne - Bern  (25.1 min)
+f=1   IC   Brig - Martigny - Lausanne - Geneve  (158.3 min)
+f=1   IC   Brig - Thun - Bern - Neuchatel - Yverdon-les-Bains  (142.7 min)
+f=1   IC   BaselSBB - Biel/Bienne - Neuchatel - Yverdon-les-Bains - Lausanne  (139.1 min)
+f=1   IC   BaselSBB - Schaffhausen  (73.4 min)
+f=1   IC   Chur - Zug - Luzern  (106.8 min)
+f=1   IC   Chur - ZurichHB  (87.0 min)
+f=1   IC   Geneve - Lausanne - Fribourg/Freiburg - Bern - Luzern  (195.5 min)
+f=1   IC   Geneve - Yverdon-les-Bains - Neuchatel - Biel/Bienne - Olten - Aarau - ZurichHB - Winterthur - St.Gallen  (273.3 min)
+f=1   IC   Lausanne - Fribourg/Freiburg - Bern - Olten - Aarau - ZurichHB - Winterthur - St.Gallen  (232.2 min)
+f=1   IC   Luzern - Thun  (67.3 min)
+f=1   IC   Martigny - Fribourg/Freiburg - Neuchatel  (118.2 min)
+f=1   IC   Neuchatel - Biel/Bienne - Olten - Aarau - Schaffhausen  (140.8 min)

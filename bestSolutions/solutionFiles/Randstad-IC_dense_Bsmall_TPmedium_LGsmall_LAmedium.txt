@@ -1,0 +1,52 @@
+﻿# Settings
+Instance: instances/Randstad-IC
+ODMatrix: dense
+TotalVolume: 58397.8
+TransferPenalty: medium (15)
+LineGeneration: small
+Budget: small (50)
+LineActivationCost: medium
+Solver: DPTNSolver-MIP
+RouteGeneration: large
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 2530669.5881
+Cost: 49.6515
+ComputationTimeSeconds: 1100.7
+OptimalityGap: 0.0000
+DirectTravelersEstimatePct: 62.02
+OneTransferEstimatePct: 29.59
+TwoPlusTransfersEstimatePct: 1.13
+ObjectiveActual: 2529366.5938
+UncoveredDemandActualPct: 4.70
+DirectTravelersActualPct: 54.98
+OneTransferActualPct: 36.07
+TwoPlusTransfersActualPct: 4.25
+
+# LinePlan
+1 12 22 27 35 33
+2 10 14 20 27 31
+1 4 71
+1 6 51 48 58
+3 14 20 29
+1 46 45 43 40 32 34 25 18
+1 46 59 49 50 9 3 0
+1 37 41 42 44
+1 39 50
+2 17 15 57 60
+1 73 52 54
+
+# Human-Readable Line Plan
+f=3   IC   AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - RotterdamCentraal  (40.4 min)
+f=2   IC   AlmereCentrum - AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - LeidenCentraal - DenHaagCentraal  (60.7 min)
+f=2   IC   Haarlem - AmsterdamSloterdijk - AmsterdamCentraal - AmsterdamAmstel - UtrechtCentraal  (40.0 min)
+f=1   IC   AlmereCentrum - AmsterdamZuid - Schiphol - LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS  (53.3 min)
+f=1   IC   Amersfoort - Hilversum - AmsterdamCentraal  (29.2 min)
+f=1   IC   Amersfoort - UtrechtCentraal - Gouda - RotterdamAlexander - RotterdamCentraal  (50.5 min)
+f=1   IC   Dordrecht - RotterdamCentraal - SchiedamCentrum - Delft - DenHaagHS - DenHaagLaanvanNOI - LeidenCentraal - Heemstede-Aerdenhout - Haarlem  (64.3 min)
+f=1   IC   Dordrecht - RotterdamCentraal - RotterdamAlexander - Gouda - UtrechtCentraal - Hilversum - AlmereCentrum - LelystadCentrum  (95.2 min)
+f=1   IC   DenHaagCentraal - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal  (20.3 min)
+f=1   IC   DenHaagCentraal - Gouda - UtrechtCentraal  (35.3 min)
+f=1   IC   LeidenCentraal - AlphenaandenRijn - Woerden - UtrechtCentraal  (38.8 min)

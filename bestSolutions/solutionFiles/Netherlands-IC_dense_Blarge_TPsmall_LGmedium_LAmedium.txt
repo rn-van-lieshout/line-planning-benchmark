@@ -1,0 +1,98 @@
+﻿# Settings
+Instance: instances/Netherlands-IC
+ODMatrix: dense
+TotalVolume: 169899.2
+TransferPenalty: small (5)
+LineGeneration: medium
+Budget: large (215)
+LineActivationCost: medium
+Solver: PTNSolver-Karbstein
+RouteGeneration: medium
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 10355750.5324
+Cost: 214.7916
+ComputationTimeSeconds: 3600.7
+OptimalityGap: 0.0009
+DirectTravelersEstimatePct: 72.63
+OneTransferEstimatePct: 25.79
+TwoPlusTransfersEstimatePct: 1.53
+ObjectiveActual: 10336938.8827
+UncoveredDemandActualPct: 0.05
+DirectTravelersActualPct: 71.32
+OneTransferActualPct: 25.17
+TwoPlusTransfersActualPct: 3.47
+
+# LinePlan
+1 12 22 29 47
+1 2 8 51 38
+1 10 14 20 29
+1 4 71 14 20
+1 6
+1 145 143 141 139 15 57 60 87
+1 145 143 141 139 20 29 74 80 82 90 92 94
+1 14 20 29 74 80 82 100 102 104
+1 46 59 49 50 135 131 129 115
+1 185 183 6 51 38
+1 83 81 75 59 49 50 7 171 169 167
+1 83 81 75 28 21 192
+1 191 189 187 185 183 4 71 14 16 19 24 31
+1 191 189 187 122 124 126 180 1 12 22 27 31
+1 191 189 187 185 183 4 65 63 22 27 35 33 41 42 44
+1 191 189 187 185 183 6 51 48 58 47 98 158 160 162 164
+1 166 168 180 1 10 14 16 19 24 35 33 41 42 44 47 98
+1 166 168 127 125 123 121 119 117 115 113 111 85 81 78 96 158 160 162 164
+1 37 41 42 44 74 80 84
+1 39 50 137 133 129 115
+1 37 41 42 44 47 76 80 84 110 112
+1 30 26 21 15 57 60 137 133 129 115
+1 157 155 153 151 149 147 145 143 141 139 15 70 5 182 184 121 119 117 115
+1 17 15 57 60 87
+1 195 139 20 27 35 33 41 42 44 74 80 82 100 102 104 108
+1 193 15 57 60 87 85 81 78 96
+1 107 105 103 101 83 81 75 28 23 13 0 181 179 177 175 173
+1 86 51 48 58
+1 73 52 54 7 171 179 177 175 173
+1 73 52 54 135 131 129 115
+1 1 2 8 51 48 58
+1 1 10 14 20 27 35 33 41 42 44
+1 114 128 132 136 69 67 22
+1 61 56 14 20 29 47 98 158 160 162 164
+
+# Human-Readable Line Plan
+f=1   IC   AlmereCentrum - AmsterdamZuid - Schiphol - RotterdamCentraal - Dordrecht  (65.4 min)
+f=1   IC   AlmereCentrum - Hilversum - UtrechtCentraal - Gouda - DenHaagCentraal  (65.5 min)
+f=1   IC   AlmereCentrum - AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - RotterdamCentraal  (60.4 min)
+f=1   IC   Amersfoort - Hilversum - AmsterdamCentraal - AmsterdamSloterdijk - Schiphol  (45.5 min)
+f=1   IC   Amersfoort - UtrechtCentraal  (12.5 min)
+f=1   IC   Alkmaar - Heiloo - Castricum - Zaandam - AmsterdamSloterdijk - AmsterdamCentraal - AmsterdamAmstel - UtrechtCentraal - Hertogenbosch's  (90.2 min)
+f=1   IC   Alkmaar - Heiloo - Castricum - Zaandam - AmsterdamSloterdijk - Schiphol - RotterdamCentraal - Breda - Tilburg - Eindhoven - Helmond - Deurne - Venlo  (165.4 min)
+f=1   IC   AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - RotterdamCentraal - Breda - Tilburg - Eindhoven - Weert - Roermond - Sittard  (156.7 min)
+f=1   IC   Dordrecht - RotterdamCentraal - RotterdamAlexander - Gouda - UtrechtCentraal - Veenendaal-deKlomp - Ede-Wageningen - Arnhem - Nijmegen  (103.4 min)
+f=1   IC   Deventer - Apeldoorn - Amersfoort - UtrechtCentraal - Gouda - DenHaagCentraal  (88.9 min)
+f=1   IC   Eindhoven - Tilburg - Breda - RotterdamCentraal - RotterdamAlexander - Gouda - UtrechtCentraal - Amersfoort - Zwolle - Assen - Groningen  (213.0 min)
+f=1   IC   Eindhoven - Tilburg - Breda - RotterdamCentraal - Schiphol - AmsterdamSloterdijk - Hoorn  (124.7 min)
+f=1   IC   Enschede - Hengelo - Almelo - Deventer - Apeldoorn - Amersfoort - Hilversum - AmsterdamCentraal - AmsterdamSloterdijk - Haarlem - Heemstede-Aerdenhout - LeidenCentraal - DenHaagCentraal  (158.7 min)
+f=1   IC   Enschede - Hengelo - Almelo - Deventer - Olst - Wijhe - Zwolle - LelystadCentrum - AlmereCentrum - AmsterdamZuid - Schiphol - LeidenCentraal - DenHaagCentraal  (160.6 min)
+f=1   IC   Enschede - Hengelo - Almelo - Deventer - Apeldoorn - Amersfoort - Hilversum - Duivendrecht - AmsterdamZuid - Schiphol - LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal  (167.8 min)
+f=1   IC   Enschede - Hengelo - Almelo - Deventer - Apeldoorn - Amersfoort - UtrechtCentraal - Gouda - RotterdamAlexander - RotterdamCentraal - Dordrecht - Roosendaal - BergenopZoom - Goes - Middelburg - Vlissingen  (224.0 min)
+f=1   IC   Groningen - Assen - Zwolle - LelystadCentrum - AlmereCentrum - AmsterdamCentraal - AmsterdamSloterdijk - Haarlem - Heemstede-Aerdenhout - LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal - Dordrecht - Roosendaal  (223.0 min)
+f=1   IC   Groningen - Assen - Zwolle - Wijhe - Olst - Deventer - Zutphen - Dieren - Arnhem - Nijmegen - Oss - Hertogenbosch's - Tilburg - Breda - Etten-Leur - Roosendaal - BergenopZoom - Goes - Middelburg - Vlissingen  (256.2 min)
+f=1   IC   DenHaagCentraal - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal - Breda - Tilburg - Hertogenbosch's  (75.2 min)
+f=1   IC   DenHaagCentraal - Gouda - UtrechtCentraal - Driebergen-Zeist - Ede-Wageningen - Arnhem - Nijmegen  (88.7 min)
+f=1   IC   DenHaagCentraal - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal - Dordrecht - Breda - Tilburg - Hertogenbosch's - Oss - Nijmegen  (114.3 min)
+f=1   IC   DenHaagCentraal - LeidenCentraal - Schiphol - AmsterdamSloterdijk - AmsterdamCentraal - AmsterdamAmstel - UtrechtCentraal - Driebergen-Zeist - Ede-Wageningen - Arnhem - Nijmegen  (120.3 min)
+f=1   IC   DenHelder - DenHelderZuid - AnnaPaulowna - Schagen - Heerhugowaard - AlkmaarNoord - Alkmaar - Heiloo - Castricum - Zaandam - AmsterdamSloterdijk - AmsterdamCentraal - Hilversum - Amersfoort - Apeldoorn - Deventer - Zutphen - Dieren - Arnhem - Nijmegen  (186.5 min)
+f=1   IC   Haarlem - AmsterdamSloterdijk - AmsterdamCentraal - AmsterdamAmstel - UtrechtCentraal - Hertogenbosch's  (70.7 min)
+f=1   IC   Hoorn - Zaandam - AmsterdamSloterdijk - Schiphol - LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal - Breda - Tilburg - Eindhoven - Weert - Roermond - Sittard - Maastricht  (215.4 min)
+f=1   IC   Hoorn - AmsterdamSloterdijk - AmsterdamCentraal - AmsterdamAmstel - UtrechtCentraal - Hertogenbosch's - Tilburg - Breda - Etten-Leur - Roosendaal  (134.6 min)
+f=1   IC   Heerlen - Sittard - Roermond - Weert - Eindhoven - Tilburg - Breda - RotterdamCentraal - Schiphol - AmsterdamZuid - AlmereCentrum - LelystadCentrum - Zwolle - Meppel - Steenwijk - Heerenveen - Leeuwarden  (283.5 min)
+f=1   IC   Hertogenbosch's - UtrechtCentraal - Gouda - RotterdamAlexander - RotterdamCentraal  (66.7 min)
+f=1   IC   LeidenCentraal - AlphenaandenRijn - Woerden - UtrechtCentraal - Amersfoort - Zwolle - Meppel - Steenwijk - Heerenveen - Leeuwarden  (156.8 min)
+f=1   IC   LeidenCentraal - AlphenaandenRijn - Woerden - UtrechtCentraal - Veenendaal-deKlomp - Ede-Wageningen - Arnhem - Nijmegen  (92.3 min)
+f=1   IC   LelystadCentrum - AlmereCentrum - Hilversum - UtrechtCentraal - Gouda - RotterdamAlexander - RotterdamCentraal  (81.2 min)
+f=1   IC   LelystadCentrum - AlmereCentrum - AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal  (96.5 min)
+f=1   IC   Nijmegen - Arnhem - Ede-Wageningen - Driebergen-Zeist - UtrechtCentraal - AmsterdamBijlmerArenA - AmsterdamZuid - Schiphol  (81.3 min)
+f=1   IC   UtrechtCentraal - AmsterdamAmstel - AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - RotterdamCentraal - Dordrecht - Roosendaal - BergenopZoom - Goes - Middelburg - Vlissingen  (157.9 min)

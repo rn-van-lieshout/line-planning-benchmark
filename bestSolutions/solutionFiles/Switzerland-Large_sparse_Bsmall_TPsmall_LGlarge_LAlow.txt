@@ -1,0 +1,66 @@
+﻿# Settings
+Instance: instances/Switzerland-Large
+ODMatrix: sparse
+TotalVolume: 120011.9
+TransferPenalty: small (5)
+LineGeneration: large
+Budget: small (107)
+LineActivationCost: low
+Solver: PTNSolver
+RouteGeneration: large
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 4861334.5692
+Cost: 106.7983
+ComputationTimeSeconds: 3601.4
+OptimalityGap: 0.0074
+DirectTravelersEstimatePct: 79.13
+OneTransferEstimatePct: 13.02
+TwoPlusTransfersEstimatePct: 0.70
+ObjectiveActual: 4956360.9840
+UncoveredDemandActualPct: 6.91
+DirectTravelersActualPct: 58.87
+OneTransferActualPct: 26.21
+TwoPlusTransfersActualPct: 8.01
+
+# LinePlan
+1 63 133
+1 28 297 110 21
+1 31 247 220 232 85 299 214 51
+1 33 137 165 171 223 16 154 271 178 78 69 161 190 242 280 194
+1 33 137 163 103 149 285 182 293 238 302
+1 42 144 279 157 130 26 83
+1 41 52 95 137 165 171 224 38 257 267 239
+1 54 87 153 92 228 283
+1 72 129 167 101 183 62 28 294 10 107 145 56 48 1 91 152 86 55 202 301 58 257 266 203 186 35 195
+1 80 222 248 100 166 47
+1 119 180 270 152 86 55 202 301 58 255 76
+1 121 211 5 139 250 157 130 28 298 145 56 48 1 91 151 18 231 208 174 265
+1 127 123 97 175 73 14 24 68 79 182 293 235 259 161 191 275 59 274
+1 146 104
+1 192 303 200 54 88 261 7 230 16 153 92
+1 206 40
+1 217 145 56 48 1 91 151 18 229 8 262 86 55 202
+1 238 301 58
+
+# Human-Readable Line Plan
+f=1   IC   Fribourg/Freiburg - Murten/Morat - Neuchatel  (36.0 min)
+f=1   IC   Bern - Zollikofen - Lyss - Biel/Bienne - Neuchatel  (53.0 min)
+f=1   IC   Brig - Visp - Spiez - Thun - Konolfingen - Zollikofen - Solothurn - Delemont - LaChaux-de-Fonds  (188.0 min)
+f=1   IC   BaselSBB - Muttenz - Pratteln - Rheinfelden - Stein-Sackingen - BruggAG - Othmarsingen - WohlenAG - Rotkreuz - Immensee - Arth-Goldau - PfaffikonSZ - RapperswilSG - Uznach - Ziegelbrucke - Sargans - Chur  (211.3 min)
+f=1   IC   BaselSBB - Muttenz - Pratteln - Liestal - Olten - Zofingen - Rotkreuz - Zug - Thalwil - ZurichHB - RapperswilSG  (148.4 min)
+f=1   IC   LaChaux-de-Fonds - Neuchatel - Yverdon-les-Bains - Payerne - Murten/Morat - Bern - Konolfingen - Luzern  (180.1 min)
+f=1   IC   LaChaux-de-Fonds - Delemont - Laufen - Muttenz - Pratteln - Rheinfelden - Stein-Sackingen - Bulach - Winterthur - WilSG - Uznach - RapperswilSG  (226.2 min)
+f=1   IC   Dietikon - Killwangen-Spreitenbach - Othmarsingen - Lenzburg - Suhr - Zofingen - Luzern  (79.6 min)
+f=1   IC   Geneve - Morges - RenensVD - Lausanne - RomontFR - Fribourg/Freiburg - Bern - Zollikofen - Burgdorf - Langenthal - Olten - Dulliken - DanikenSO - Aarau - Lenzburg - Othmarsingen - Killwangen-Spreitenbach - Dietikon - Schlieren - ZurichHB - Effretikon - Winterthur - WilSG - St.Gallen - Rorschach - BuchsSG - Sargans - Ziegelbrucke  (407.4 min)
+f=1   IC   InterlakenOst - Spiez - Vevey - Lausanne - RenensVD - Chavornay - Yverdon-les-Bains  (140.9 min)
+f=1   IC   Luzern - Rotkreuz - WohlenAG - Othmarsingen - Killwangen-Spreitenbach - Dietikon - Schlieren - ZurichHB - Effretikon - Winterthur - Henggart - Schaffhausen  (123.1 min)
+f=1   IC   Martigny - St-Maurice - Aigle - Montreux - Vevey - Payerne - Murten/Morat - Bern - Zollikofen - Olten - Dulliken - DanikenSO - Aarau - Lenzburg - Othmarsingen - BruggAG - Turgi - Schaffhausen - Romanshorn - Weinfelden - WilSG  (351.0 min)
+f=1   IC   Mendrisio - Melide - Lugano - Rivera-Bironico - Giubiasco - Bellinzona - Biasca - Arth-Goldau - Immensee - Rotkreuz - Zug - Thalwil - Wadenswil - PfaffikonSZ - RapperswilSG - WetzikonZH - Effretikon - Wallisellen - ZurichHB  (243.0 min)
+f=1   IC   Olten - Liestal - Pratteln  (22.4 min)
+f=1   IC   RapperswilSG - ZurichHB - Schlieren - Dietikon - Killwangen-Spreitenbach - Wettingen - Baden - Turgi - BruggAG - Othmarsingen - Lenzburg - Suhr  (82.8 min)
+f=1   IC   Schaffhausen - Bulach - ZurichHB  (37.2 min)
+f=1   IC   Solothurn - Olten - Dulliken - DanikenSO - Aarau - Lenzburg - Othmarsingen - BruggAG - Turgi - Baden - Wettingen - Killwangen-Spreitenbach - Dietikon - Schlieren - ZurichHB  (101.7 min)
+f=1   IC   Thalwil - ZurichHB - Effretikon - Winterthur  (31.7 min)

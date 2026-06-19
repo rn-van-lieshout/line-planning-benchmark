@@ -37,15 +37,17 @@ import optimisation.columnGeneration.columnManagement.AllColumnSelector;
 
 public class CGNSolver extends Solver
 {
-	public CGNSolver()
+	public CGNSolver(boolean useStrongInequalities)
 	{
 		super(NetworkType.CGN);
+
+		this.useStrongInequalities = useStrongInequalities;
 	}
 
 	@Override
 	public String getName()
 	{
-		return "CGNSolver";
+		return useStrongInequalities ? "CGNSolver-cuts" : "CGNSolver";
 	}
 
 	@Override

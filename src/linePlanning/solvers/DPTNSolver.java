@@ -42,17 +42,19 @@ public class DPTNSolver extends Solver
 {
 	private final boolean generateColumns;
 
-	public DPTNSolver(boolean generateColumns)
+	public DPTNSolver(boolean generateColumns, boolean useStrongInequalities)
 	{
 		super(NetworkType.DPTN);
 
 		this.generateColumns = generateColumns;
+		this.useStrongInequalities = useStrongInequalities;
 	}
 
 	@Override
 	public String getName()
 	{
-		return generateColumns ? "DPTNSolver-BAP" : "DPTNSolver-MIP";
+		if (!generateColumns) return "DPTNSolver-MIP";
+		return useStrongInequalities ? "DPTNSolver-BAPC" : "DPTNSolver-BAP";
 	}
 
 	@Override

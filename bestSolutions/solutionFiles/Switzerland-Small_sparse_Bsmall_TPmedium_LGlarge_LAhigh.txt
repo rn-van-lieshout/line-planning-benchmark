@@ -1,0 +1,63 @@
+﻿# Settings
+Instance: instances/Switzerland-Small
+ODMatrix: sparse
+TotalVolume: 93045.2
+TransferPenalty: medium (15)
+LineGeneration: large
+Budget: small (142)
+LineActivationCost: high
+Solver: DPTNSolver-BAP
+StrongInequalities: true
+PairsPerGroup: 1
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 7141864.2559
+Cost: 141.8837
+ComputationTimeSeconds: 3800.0
+OptimalityGap: 0.0362
+DirectTravelersEstimatePct: 98.39
+OneTransferEstimatePct: 0.00
+TwoPlusTransfersEstimatePct: 0.00
+ObjectiveActual: 7287405.5406
+UncoveredDemandActualPct: 1.07
+DirectTravelersActualPct: 71.58
+OneTransferActualPct: 23.81
+TwoPlusTransfersActualPct: 3.54
+
+# LinePlan
+1 28 71 45 8 49 2
+1 4 10 25
+2 13 52
+1 13 49 3 78 66
+2 14
+2 16 60 10
+1 17 7
+1 19
+1 23 78
+1 20 55 67 76 1 51 10 25 32
+1 30 71 46 11
+1 35 1 51 10 26
+2 39 75 78 66
+1 43 34 71 45 8 49 2
+3 49 3
+2 55 67 79
+
+# Human-Readable Line Plan
+f=3   IC   Olten - Aarau - ZurichHB  (43.1 min)
+f=2   IC   Bern - Olten - BaselSBB  (74.5 min)
+f=2   IC   Bern - Thun  (23.5 min)
+f=2   IC   Brig - Thun - Bern - Fribourg/Freiburg  (105.2 min)
+f=2   IC   Luzern - Zug - ZurichHB - Winterthur - Schaffhausen  (86.2 min)
+f=2   IC   St.Gallen - Winterthur - ZurichHB - Zug  (83.3 min)
+f=1   IC   Fribourg/Freiburg - Yverdon-les-Bains - Neuchatel - Biel/Bienne - Olten - Aarau - Schaffhausen  (209.2 min)
+f=1   IC   Biel/Bienne - Bern - Fribourg/Freiburg - Lausanne  (101.7 min)
+f=1   IC   Bern - Olten - Aarau - ZurichHB - Winterthur - Schaffhausen  (135.1 min)
+f=1   IC   BaselSBB - Biel/Bienne - Neuchatel  (78.8 min)
+f=1   IC   BaselSBB - Schaffhausen  (73.4 min)
+f=1   IC   Chur - ZurichHB - Winterthur  (105.9 min)
+f=1   IC   Chur - St.Gallen - Winterthur - ZurichHB - Aarau - Olten - Bern - Fribourg/Freiburg - Lausanne - Geneve  (360.8 min)
+f=1   IC   Geneve - Yverdon-les-Bains - Neuchatel - Bern - Luzern  (201.6 min)
+f=1   IC   Luzern - Aarau - Olten - Bern - Fribourg/Freiburg - Martigny  (212.9 min)
+f=1   IC   Martigny - Lausanne - Yverdon-les-Bains - Neuchatel - Biel/Bienne - Olten - Aarau - Schaffhausen  (253.0 min)

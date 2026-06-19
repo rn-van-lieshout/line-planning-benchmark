@@ -18,7 +18,7 @@ public class VerifySolution
 {
     public static void main(String[] args) throws IOException, IloException
     {
-        String solutionFile = "instances/Randstad-IC/solutions/2026-06-19_15-05-38.txt";
+        String solutionFile = "bestSolutions/solutionFiles/Netherlands-IC_sparse_Blarge_TPlarge_LGmedium_LAlow.txt";
 
         Configuration.initialiseConfiguration("settings.properties");
 
@@ -60,8 +60,10 @@ public class VerifySolution
         {
             String line;
             boolean inSettings = false;
+            boolean firstLine = true;
             while ((line = reader.readLine()) != null)
             {
+                if (firstLine) { line = line.replace("﻿", ""); firstLine = false; }
                 if (line.equals("# Settings"))        { inSettings = true;  continue; }
                 if (line.startsWith("# "))             { inSettings = false; continue; }
                 if (inSettings && line.contains(": "))

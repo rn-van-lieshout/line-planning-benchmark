@@ -1,0 +1,50 @@
+﻿# Settings
+Instance: instances/Randstad-IC
+ODMatrix: sparse
+TotalVolume: 66127.8
+TransferPenalty: small (5)
+LineGeneration: medium
+Budget: small (50)
+LineActivationCost: medium
+Solver: PTNSolver
+RouteGeneration: large
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 2113880.1921
+Cost: 49.8633
+ComputationTimeSeconds: 320.9
+OptimalityGap: 0.0000
+DirectTravelersEstimatePct: 92.22
+OneTransferEstimatePct: 4.63
+TwoPlusTransfersEstimatePct: 0.00
+ObjectiveActual: 2159437.2708
+UncoveredDemandActualPct: 3.15
+DirectTravelersActualPct: 70.73
+OneTransferActualPct: 24.36
+TwoPlusTransfersActualPct: 1.76
+
+# LinePlan
+2 2 8 51 48 58 47
+1 12 22 27 35 33 41 42 44
+1 6 51 38
+2 4 71 14 20 27 31
+3 14 20 29
+1 37 41 42 44
+1 17 15 57 60
+1 73 52 54
+1 1 10 14 16 19 24 35 33 41 42 44
+1 23 66 68
+
+# Human-Readable Line Plan
+f=3   IC   AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - RotterdamCentraal  (40.4 min)
+f=2   IC   AlmereCentrum - Hilversum - UtrechtCentraal - Gouda - RotterdamAlexander - RotterdamCentraal - Dordrecht  (80.1 min)
+f=2   IC   Amersfoort - Hilversum - AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - LeidenCentraal - DenHaagCentraal  (72.0 min)
+f=1   IC   AlmereCentrum - AmsterdamZuid - Schiphol - LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal  (72.4 min)
+f=1   IC   Amersfoort - UtrechtCentraal - Gouda - DenHaagCentraal  (49.8 min)
+f=1   IC   DenHaagCentraal - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal  (20.3 min)
+f=1   IC   Haarlem - AmsterdamSloterdijk - AmsterdamCentraal - AmsterdamAmstel - UtrechtCentraal  (40.0 min)
+f=1   IC   LeidenCentraal - AlphenaandenRijn - Woerden - UtrechtCentraal  (38.8 min)
+f=1   IC   LelystadCentrum - AlmereCentrum - AmsterdamCentraal - AmsterdamSloterdijk - Haarlem - Heemstede-Aerdenhout - LeidenCentraal - DenHaagLaanvanNOI - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal  (101.1 min)
+f=1   IC   Schiphol - AmsterdamZuid - AmsterdamBijlmerArenA - UtrechtCentraal  (27.9 min)

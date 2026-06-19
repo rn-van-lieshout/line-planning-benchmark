@@ -1,0 +1,54 @@
+﻿# Settings
+Instance: instances/Randstad-IC
+ODMatrix: dense
+TotalVolume: 58397.8
+TransferPenalty: medium (15)
+LineGeneration: small
+Budget: medium (72)
+LineActivationCost: high
+Solver: DPTNSolver-MIP
+RouteGeneration: large
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 2226138.8614
+Cost: 71.9663
+ComputationTimeSeconds: 24.8
+OptimalityGap: 0.0000
+DirectTravelersEstimatePct: 78.37
+OneTransferEstimatePct: 20.29
+TwoPlusTransfersEstimatePct: 1.24
+ObjectiveActual: 2307811.3831
+UncoveredDemandActualPct: 0.00
+DirectTravelersActualPct: 67.75
+OneTransferActualPct: 30.88
+TwoPlusTransfersActualPct: 1.38
+
+# LinePlan
+1 12 22 29 47
+1 6 51 38
+1 4 71 14 16
+1 6 55 53 72
+1 4 65 63 22
+2 14 20 27 31
+3 14 20 29
+2 46 59 49 50 9 3 0
+1 46 45 43 40 32 34 26 23 13 0
+1 32 34 25 18 17 15 11 0
+1 37 41 42 44
+2 17 15 57 60
+
+# Human-Readable Line Plan
+f=3   IC   AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - RotterdamCentraal  (40.4 min)
+f=2   IC   AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - LeidenCentraal - DenHaagCentraal  (40.8 min)
+f=2   IC   Dordrecht - RotterdamCentraal - RotterdamAlexander - Gouda - UtrechtCentraal - Hilversum - AlmereCentrum - LelystadCentrum  (95.2 min)
+f=2   IC   Haarlem - AmsterdamSloterdijk - AmsterdamCentraal - AmsterdamAmstel - UtrechtCentraal  (40.0 min)
+f=1   IC   AlmereCentrum - AmsterdamZuid - Schiphol - RotterdamCentraal - Dordrecht  (65.4 min)
+f=1   IC   Amersfoort - UtrechtCentraal - Gouda - DenHaagCentraal  (49.8 min)
+f=1   IC   Amersfoort - Hilversum - AmsterdamCentraal - AmsterdamSloterdijk - Haarlem  (45.0 min)
+f=1   IC   Amersfoort - UtrechtCentraal - Woerden - AlphenaandenRijn - LeidenCentraal  (53.4 min)
+f=1   IC   Amersfoort - Hilversum - Duivendrecht - AmsterdamZuid - Schiphol  (38.5 min)
+f=1   IC   Dordrecht - RotterdamCentraal - SchiedamCentrum - Delft - DenHaagHS - DenHaagLaanvanNOI - LeidenCentraal - Schiphol - AmsterdamZuid - AlmereCentrum - LelystadCentrum  (101.5 min)
+f=1   IC   DenHaagHS - DenHaagLaanvanNOI - LeidenCentraal - Heemstede-Aerdenhout - Haarlem - AmsterdamSloterdijk - AmsterdamCentraal - AlmereCentrum - LelystadCentrum  (82.0 min)
+f=1   IC   DenHaagCentraal - DenHaagHS - Delft - SchiedamCentrum - RotterdamCentraal  (20.3 min)

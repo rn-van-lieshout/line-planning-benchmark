@@ -1,0 +1,48 @@
+﻿# Settings
+Instance: instances/Randstad-IC
+ODMatrix: sparse
+TotalVolume: 66127.8
+TransferPenalty: small (5)
+LineGeneration: small
+Budget: small (61)
+LineActivationCost: high
+Solver: PTNSolver-Karbstein
+RouteGeneration: large
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 2216670.6388
+Cost: 60.5359
+ComputationTimeSeconds: 91.3
+OptimalityGap: 0.0000
+DirectTravelersEstimatePct: 64.34
+OneTransferEstimatePct: 30.11
+TwoPlusTransfersEstimatePct: 0.00
+ObjectiveActual: 2206872.3971
+UncoveredDemandActualPct: 3.31
+DirectTravelersActualPct: 63.24
+OneTransferActualPct: 28.90
+TwoPlusTransfersActualPct: 4.54
+
+# LinePlan
+2 12 22 27 31
+2 2 8 51 48 58
+1 4 71
+1 6 55 53 72
+3 14 20 29
+2 46 45 43 40 32 34 25 18
+1 32 34 26 21 15 11 0
+2 39 50
+2 17 15 57 60
+
+# Human-Readable Line Plan
+f=3   IC   AmsterdamCentraal - AmsterdamSloterdijk - Schiphol - RotterdamCentraal  (40.4 min)
+f=2   IC   AlmereCentrum - AmsterdamZuid - Schiphol - LeidenCentraal - DenHaagCentraal  (51.7 min)
+f=2   IC   AlmereCentrum - Hilversum - UtrechtCentraal - Gouda - RotterdamAlexander - RotterdamCentraal  (66.1 min)
+f=2   IC   Dordrecht - RotterdamCentraal - SchiedamCentrum - Delft - DenHaagHS - DenHaagLaanvanNOI - LeidenCentraal - Heemstede-Aerdenhout - Haarlem  (64.3 min)
+f=2   IC   DenHaagCentraal - Gouda - UtrechtCentraal  (35.3 min)
+f=2   IC   Haarlem - AmsterdamSloterdijk - AmsterdamCentraal - AmsterdamAmstel - UtrechtCentraal  (40.0 min)
+f=1   IC   Amersfoort - Hilversum - AmsterdamCentraal  (29.2 min)
+f=1   IC   Amersfoort - UtrechtCentraal - Woerden - AlphenaandenRijn - LeidenCentraal  (53.4 min)
+f=1   IC   DenHaagHS - DenHaagLaanvanNOI - LeidenCentraal - Schiphol - AmsterdamSloterdijk - AmsterdamCentraal - AlmereCentrum - LelystadCentrum  (77.4 min)

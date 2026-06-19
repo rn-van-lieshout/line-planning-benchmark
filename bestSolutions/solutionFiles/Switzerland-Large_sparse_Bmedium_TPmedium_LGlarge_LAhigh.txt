@@ -1,0 +1,72 @@
+﻿# Settings
+Instance: instances/Switzerland-Large
+ODMatrix: sparse
+TotalVolume: 120011.9
+TransferPenalty: medium (15)
+LineGeneration: large
+Budget: medium (178)
+LineActivationCost: high
+Solver: DPTNSolver-MIP
+RouteGeneration: medium
+TimeLimitSeconds: 3600
+
+# Results
+Feasible: true
+ObjectiveEstimate: 5182779.0996
+Cost: 177.8090
+ComputationTimeSeconds: 3601.1
+OptimalityGap: 0.0208
+DirectTravelersEstimatePct: 82.49
+OneTransferEstimatePct: 7.70
+TwoPlusTransfersEstimatePct: 0.41
+ObjectiveActual: 5243367.7152
+UncoveredDemandActualPct: 6.83
+DirectTravelersActualPct: 67.91
+OneTransferActualPct: 23.04
+TwoPlusTransfersActualPct: 2.22
+
+# LinePlan
+1 62 26 84
+1 227 91 151 18 229 8 262 86 55 202
+1 28 297 110 21 144 277 45 167 102 249 138 6 212
+1 28 298 145 56 48 1 91 151 18 229 8 262 86 55 202
+1 31 247 220 232 85 299 214 51
+1 33 137 165 171 223 18 229 8 262 86 55 202 302 189 162 260 237 292 178 78 67 23 15 74 176 96 124
+1 33 137 163 103 149 285 178 78 71
+1 42 144 279 157 130 26 83
+1 41 52 95 137 165 171 224 38 257 267 239
+1 43 195 281 239 189 162 260 238
+1 72 129 167 101 183 62 28 299 217 145 56 48 1 91 152 86 55 202 301 58 257 266 203 186 35 195
+1 80 220 232 81 10 109 285 182 293 235 259 161 192 300 36
+1 99 157 132 113 296 81 10 107 146 104 164
+1 120 286 227 91 151 18 231
+1 119 178 78 69 161 191 275 58 255 76
+1 119 182 293 238 301 60
+1 119 180 270 152 86 55
+1 139 251 183 63 133
+1 139 250 157 130 28 294 10 107 145 56 48 1 91 152 86 55 202 301 58 256 263 173
+1 165 171 223 16 154 271 178 78 69 161 190 240
+1 192 305 272 58
+
+# Human-Readable Line Plan
+f=1   IC   Fribourg/Freiburg - Bern - Konolfingen - Thun  (54.5 min)
+f=1   IC   Suhr - Lenzburg - Othmarsingen - BruggAG - Turgi - Baden - Wettingen - Killwangen-Spreitenbach - Dietikon - Schlieren - ZurichHB  (56.9 min)
+f=1   IC   Bern - Zollikofen - Lyss - Biel/Bienne - Neuchatel - Yverdon-les-Bains - Chavornay - RenensVD - Lausanne - Vevey - Montreux - Aigle - St-Maurice - Martigny  (177.2 min)
+f=1   IC   Bern - Zollikofen - Olten - Dulliken - DanikenSO - Aarau - Lenzburg - Othmarsingen - BruggAG - Turgi - Baden - Wettingen - Killwangen-Spreitenbach - Dietikon - Schlieren - ZurichHB  (126.9 min)
+f=1   IC   Brig - Visp - Spiez - Thun - Konolfingen - Zollikofen - Solothurn - Delemont - LaChaux-de-Fonds  (188.0 min)
+f=1   IC   BaselSBB - Muttenz - Pratteln - Rheinfelden - Stein-Sackingen - BruggAG - Turgi - Baden - Wettingen - Killwangen-Spreitenbach - Dietikon - Schlieren - ZurichHB - RapperswilSG - PfaffikonSZ - Wadenswil - Thalwil - Zug - Rotkreuz - Immensee - Arth-Goldau - Biasca - Bellinzona - Giubiasco - Rivera-Bironico - Lugano - Melide - Mendrisio  (313.2 min)
+f=1   IC   BaselSBB - Muttenz - Pratteln - Liestal - Olten - Zofingen - Rotkreuz - Immensee - Arth-Goldau - Zug  (118.8 min)
+f=1   IC   LaChaux-de-Fonds - Neuchatel - Yverdon-les-Bains - Payerne - Murten/Morat - Bern - Konolfingen - Luzern  (180.1 min)
+f=1   IC   LaChaux-de-Fonds - Delemont - Laufen - Muttenz - Pratteln - Rheinfelden - Stein-Sackingen - Bulach - Winterthur - WilSG - Uznach - RapperswilSG  (226.2 min)
+f=1   IC   Chur - Sargans - Ziegelbrucke - Uznach - RapperswilSG - PfaffikonSZ - Wadenswil - Thalwil - ZurichHB  (105.0 min)
+f=1   IC   Geneve - Morges - RenensVD - Lausanne - RomontFR - Fribourg/Freiburg - Bern - Zollikofen - Solothurn - Olten - Dulliken - DanikenSO - Aarau - Lenzburg - Othmarsingen - Killwangen-Spreitenbach - Dietikon - Schlieren - ZurichHB - Effretikon - Winterthur - WilSG - St.Gallen - Rorschach - BuchsSG - Sargans - Ziegelbrucke  (407.2 min)
+f=1   IC   InterlakenOst - Spiez - Thun - Konolfingen - Burgdorf - Langenthal - Zofingen - Rotkreuz - Zug - Thalwil - Wadenswil - PfaffikonSZ - RapperswilSG - ZurichHB - Bulach - Schaffhausen  (255.7 min)
+f=1   IC   Lausanne - Payerne - Murten/Morat - Lyss - Zollikofen - Konolfingen - Burgdorf - Langenthal - Olten - Liestal - Pratteln - Muttenz  (198.2 min)
+f=1   IC   Luzern - Zofingen - Suhr - Lenzburg - Othmarsingen - BruggAG - Turgi - Schaffhausen  (120.5 min)
+f=1   IC   Luzern - Rotkreuz - Immensee - Arth-Goldau - PfaffikonSZ - RapperswilSG - WetzikonZH - Effretikon - Winterthur - Henggart - Schaffhausen  (127.4 min)
+f=1   IC   Luzern - Rotkreuz - Zug - Thalwil - ZurichHB - Effretikon - WetzikonZH  (78.4 min)
+f=1   IC   Luzern - Rotkreuz - WohlenAG - Othmarsingen - Killwangen-Spreitenbach - Dietikon - Schlieren  (66.2 min)
+f=1   IC   Montreux - Vevey - RomontFR - Fribourg/Freiburg - Murten/Morat - Neuchatel  (92.7 min)
+f=1   IC   Montreux - Vevey - Payerne - Murten/Morat - Bern - Zollikofen - Burgdorf - Langenthal - Olten - Dulliken - DanikenSO - Aarau - Lenzburg - Othmarsingen - Killwangen-Spreitenbach - Dietikon - Schlieren - ZurichHB - Effretikon - Winterthur - Weinfelden - Romanshorn - Schaffhausen  (323.3 min)
+f=1   IC   Pratteln - Rheinfelden - Stein-Sackingen - BruggAG - Othmarsingen - WohlenAG - Rotkreuz - Immensee - Arth-Goldau - PfaffikonSZ - RapperswilSG - Uznach - St.Gallen  (178.1 min)
+f=1   IC   RapperswilSG - ZurichHB - Wallisellen - Effretikon - Winterthur  (49.9 min)
