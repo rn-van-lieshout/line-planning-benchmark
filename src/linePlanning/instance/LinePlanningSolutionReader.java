@@ -14,7 +14,6 @@ import linePlanning.DPTN.DPTNArc;
 import linePlanning.DPTN.DPTNDrivingArc;
 import linePlanning.DPTN.DPTNDwellArc;
 import linePlanning.PTN.Connection;
-import linePlanning.instance.LinePlanningSolution;
 import linePlanning.lineGeneration.Line;
 
 public class LinePlanningSolutionReader
