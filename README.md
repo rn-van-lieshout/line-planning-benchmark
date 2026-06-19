@@ -51,7 +51,7 @@ bestSolutions/
     overview.csv               ← summary of best known objectives
 src/
     linePlanning/
-        scripts/               ← Main.java, VerifySolution.java, VerifyAllSolutions.java
+        scripts/               ← Main.java, VerifySolution.java
         solvers/               ← PTNSolver, PTNBendersSolver, DPTNSolver, CGNSolver
         instance/              ← LinePlanningInstance, LinePlanningSolution, LinePlanningParameters
         columnGeneration/      ← master problem, pricing routine, cuts
