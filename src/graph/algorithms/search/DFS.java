@@ -95,7 +95,6 @@ public class DFS<V extends DirectedGraphNodeIndex, A>
 				visited[to.getNodeIndex()] = false;
 			}
 		}
-		// TODO: How to update visited array?
 	}
 
 	private List<DirectedGraphArc<V, A>> backtrackPath(DFSLabel<V, A> label)

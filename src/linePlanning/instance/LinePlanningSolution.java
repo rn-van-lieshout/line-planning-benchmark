@@ -1,4 +1,4 @@
-package linePlanning.solvers;
+package linePlanning.instance;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -24,11 +24,8 @@ import linePlanning.columnGeneration.columns.RouteColumn;
 import linePlanning.columnGeneration.columns.RouteSlackColumn;
 import linePlanning.columnGeneration.pricing.LinePlanningPricingProblem;
 import linePlanning.PTN.Connection;
-import linePlanning.instance.LinePlanningInstance;
-import linePlanning.instance.LinePlanningParameters;
-import linePlanning.instance.ODPair;
-import linePlanning.instance.Route;
 import linePlanning.lineGeneration.Line;
+import linePlanning.solvers.CGNEvaluator;
 import optimisation.columnGeneration.AbstractSolution;
 
 public class LinePlanningSolution
@@ -223,9 +220,8 @@ public class LinePlanningSolution
 		{
 			System.out.println("Frequency " + frequencyMap.get(l) + " on " + l);
 		}
-		System.out.printf("Spend %.1f of total budget %.1f%n", cost, (double) instance.getBudget());
+		System.out.printf("\nSpend %.1f of total budget %.1f%n", cost, (double) instance.getBudget());
 		double volume = instance.getTotalVolume();
-		System.out.printf("Total volume: %.1f%n", volume);
 		System.out.printf(
 				"Routing (Estimate): %.1f%% direct, %.1f%% one transfer, %.1f%% two or more, %.1f%% unserved%n",
 				100 * directTravelersEstimate / volume, 100 * oneTransferEstimate / volume,
@@ -241,21 +237,9 @@ public class LinePlanningSolution
 			System.out.printf("Optimality gap: %.2f%%%n", 100 * gap);
 		System.out.printf("Objective (Estimate): %.4f%n", objectiveEstimate);
 		System.out.printf("Objective (Actual):   %.4f%n", objectiveActual);
-
-		Map<ODPair, Map<Route, Double>> activeRouteMap = reoptimizedSolution != null ? reoptimizedSolution.routeMap
-				: routeMap;
-		System.out.println("Top 10 unserved ODs:");
-		instance.getODPairs().stream().map(od -> {
-			double routed = activeRouteMap.get(od).values().stream().mapToDouble(Double::doubleValue).sum();
-			return Map.entry(od, od.getVolume() - routed);
-		}).filter(e -> e.getValue() > 1e-6)
-				.sorted(Comparator.comparingDouble(Map.Entry<ODPair, Double>::getValue).reversed()).limit(10)
-				.forEach(e -> System.out.printf("  %s -> %s: %.2f unserved (%.1f%%)%n",
-						e.getKey().getOrigin().getNameFull(), e.getKey().getDestination().getNameFull(), e.getValue(),
-						100.0 * e.getValue() / e.getKey().getVolume()));
 	}
 
-	public void exportLinePlan(String solverName, int cpuTimeSeconds, boolean useStrongInequalities, int pairsPerGroup) throws IOException
+	public void exportLinePlan(String solverName, int cpuTimeSeconds, boolean useStrongInequalities) throws IOException
 	{
 		String solutionsFolder = instance.getFolder() + "/solutions";
 		new File(solutionsFolder).mkdirs();
@@ -302,8 +286,6 @@ public class LinePlanningSolution
 			if (rgFile == null)
 			{
 				writer.write("StrongInequalities: " + useStrongInequalities);
-				writer.newLine();
-				writer.write("PairsPerGroup: " + pairsPerGroup);
 				writer.newLine();
 			}
 			writer.write("TimeLimitSeconds: " + cpuTimeSeconds);
@@ -438,6 +420,35 @@ public class LinePlanningSolution
 		this.cost = costTemp;
 	}
 
+	public void verifyFeasibility()
+	{
+		if (!hasSolution)
+			throw new IllegalStateException("No solution to verify.");
+
+		// Budget constraint (1f): Σ_ℓ (c^V_ℓ y_ℓ + c^F_ℓ z_ℓ) ≤ B
+		if (cost > instance.getBudget() + 1e-6)
+			throw new IllegalStateException(String.format(Locale.ROOT,
+					"Budget constraint violated: cost %.1f exceeds budget %d.", cost, instance.getBudget()));
+		System.out.printf(Locale.ROOT, "Solution satisfies budget constraint (cost %.1f ≤ budget %d).%n",
+				cost, instance.getBudget());
+
+		// Frequency constraints (1d): Σ_{ℓ∈L(c)} y_ℓ ≤ f_c  for all c ∈ C
+		Map<Connection, Integer> connectionFreq = new HashMap<>();
+		for (Line l : linePlan)
+			for (Connection c : l.getConnectionPathForward())
+				connectionFreq.merge(c, frequencyMap.get(l), Integer::sum);
+
+		for (Connection c : instance.getConnections())
+		{
+			int freq = connectionFreq.getOrDefault(c, 0);
+			if (freq > c.getMaxFreq())
+				throw new IllegalStateException(String.format(Locale.ROOT,
+						"Frequency constraint violated on connection %s→%s: frequency %d exceeds limit %d.",
+						c.getFrom().getName(), c.getTo().getName(), freq, c.getMaxFreq()));
+		}
+		System.out.println("Solution satisfies frequency constraints.");
+	}
+
 	public void evaluateTrueObjective() throws IloException
 	{
 		if (!hasSolution)
@@ -447,6 +458,7 @@ public class LinePlanningSolution
 					.mapToDouble(od -> od.getVolume() * instance.getMissedDemandPenalty(od)).sum();
 			return;
 		}
+		verifyFeasibility();
 		CGNEvaluator evaluator = new CGNEvaluator();
 		this.reoptimizedSolution = evaluator.solve(instance, frequencyMap);
 		this.objectiveActual = reoptimizedSolution.objectiveEstimate;

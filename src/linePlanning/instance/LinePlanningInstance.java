@@ -12,14 +12,14 @@ import java.util.Set;
 
 import graph.structures.digraph.DirectedGraph;
 import graph.structures.digraph.DirectedGraphArc;
-import linePlanning.CGN.network.CGN;
+import linePlanning.CGN.CGN;
 
 import linePlanning.DPTN.DPTN;
 import linePlanning.PTN.Connection;
-import linePlanning.data.Reader;
 import linePlanning.lineGeneration.Line;
 import linePlanning.routeGeneration.RouteGenerator;
 import optimisation.columnGeneration.AbstractInstance;
+import util.Reader;
 import util.Triple;
 import util.UnorderedPair;
 import util.Writer;
@@ -188,7 +188,6 @@ public class LinePlanningInstance extends AbstractInstance
 		}
 
 		this.DPTN = new DPTN(this, true, true);
-		System.out.println("Computing travel time bounds");
 		computeTravelTimeBounds();
 	}
 

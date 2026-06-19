@@ -1,4 +1,4 @@
-package linePlanning.CGN.network;
+package linePlanning.CGN;
 
 import java.util.ArrayList;
 import java.util.Collection;

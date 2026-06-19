@@ -25,6 +25,7 @@ import linePlanning.columnGeneration.pricing.LinePlanningPricingProblem;
 import linePlanning.columnGeneration.pricing.LinePlanningPricingRoutine.NetworkType;
 import linePlanning.instance.LinePlanningInstance;
 import linePlanning.instance.LinePlanningParameters;
+import linePlanning.instance.LinePlanningSolution;
 import linePlanning.instance.ODPair;
 import linePlanning.instance.StationNode;
 import linePlanning.lineGeneration.Line;

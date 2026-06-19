@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-import linePlanning.CGN.network.CGNTransferArc;
+import linePlanning.CGN.CGNTransferArc;
 import linePlanning.columnGeneration.pricing.NetworkArc;
 
 public class Route

@@ -11,9 +11,6 @@ public class ODPair
 	private StationODNode originNode;
 	private StationODNode destinationNode;
 
-	// for choice modeling
-	private double utilityOptOut;
-
 	public ODPair(Station origin, Station destination, double volume)
 	{
 		this.origin = origin;

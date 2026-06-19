@@ -11,23 +11,23 @@ import graph.algorithms.shortestPath.arcWeightFunctions.DefaultArcWeightFunction
 import graph.structures.digraph.DirectedGraphArc;
 import graph.structures.digraph.activation.Activation;
 import graph.structures.digraph.activation.DefaultActivationFunction;
-import linePlanning.CGN.network.CGN;
+import linePlanning.CGN.CGN;
 import linePlanning.PTN.Connection;
-import linePlanning.CGN.network.CGNArc;
-import linePlanning.CGN.network.CGNTransferArc;
+import linePlanning.CGN.CGNArc;
+import linePlanning.CGN.CGNTransferArc;
 import linePlanning.DPTN.DPTN;
 import linePlanning.DPTN.DPTNArc;
 import linePlanning.DPTN.DPTNRoute;
 import linePlanning.DPTN.DPTNTransferArc;
 import linePlanning.PTN.PTNRoute;
 import linePlanning.columnGeneration.pricing.NetworkArc;
-import linePlanning.data.Reader;
 import linePlanning.instance.LinePlanningParameters;
 import linePlanning.instance.LinePlanningInstance;
 import linePlanning.instance.ODPair;
 import linePlanning.instance.Route;
 import linePlanning.instance.Station;
 import linePlanning.instance.StationNode;
+import util.Reader;
 
 public class RouteGenerator
 {

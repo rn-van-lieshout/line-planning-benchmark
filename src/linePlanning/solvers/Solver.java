@@ -25,6 +25,7 @@ import linePlanning.columnGeneration.master.LinePlanningMasterProblem;
 import linePlanning.columnGeneration.pricing.LinePlanningPricingRoutine.NetworkType;
 import linePlanning.instance.LinePlanningInstance;
 import linePlanning.instance.LinePlanningParameters;
+import linePlanning.instance.LinePlanningSolution;
 import linePlanning.instance.ODPair;
 import linePlanning.instance.Station;
 import linePlanning.instance.StationNode;
@@ -58,20 +59,7 @@ public abstract class Solver
 		return useStrongInequalities;
 	}
 
-	protected int pairsPerGroup = 5;
-
-	public void setPairsPerGroup(int pairsPerGroup)
-	{
-		this.pairsPerGroup = pairsPerGroup;
-	}
-
-	public int getPairsPerGroup()
-	{
-		return pairsPerGroup;
-	}
-
-	public static Map<Station, Map<Set<ODPair>, Double>> buildGroupedVolumeMap(LinePlanningInstance instance,
-			int pairsPerGroup)
+	public static Map<Station, Map<Set<ODPair>, Double>> buildGroupedVolumeMap(LinePlanningInstance instance)
 	{
 		// Group OD-pairs by origin.
 		Map<Station, List<ODPair>> pairsByOrigin = new LinkedHashMap<>();
@@ -83,8 +71,8 @@ public abstract class Solver
 			pathArcs.put(pair, new LinkedHashSet<>(route.getConnectionPath()));
 		}
 
-		// Greedily partition each origin's OD-pairs into groups of at most
-		// pairsPerGroup, maximising arc overlap within each group.
+		// Greedily partition each origin's OD-pairs into singleton groups,
+		// maximising arc overlap.
 		Map<Station, Map<Set<ODPair>, Double>> totalVolumeMap = new LinkedHashMap<>();
 		for (Entry<Station, List<ODPair>> originEntry : pairsByOrigin.entrySet())
 		{
@@ -102,7 +90,7 @@ public abstract class Solver
 				Set<Connection> groupArcs = new LinkedHashSet<>(pathArcs.getOrDefault(seed, Set.of()));
 				double totalVolume = seed.getVolume();
 
-				while (group.size() < pairsPerGroup && !remaining.isEmpty())
+				while (group.size() < 1 && !remaining.isEmpty())
 				{
 					ODPair bestPair = null;
 					int bestOverlap = -1;

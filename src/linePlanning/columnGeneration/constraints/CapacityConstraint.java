@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.Objects;
 
 import graph.structures.digraph.DirectedGraphArc;
-import linePlanning.CGN.network.CGNArc;
-import linePlanning.CGN.network.CGNTravelArc;
+import linePlanning.CGN.CGNArc;
+import linePlanning.CGN.CGNTravelArc;
 import linePlanning.DPTN.DPTNArc;
 import linePlanning.PTN.Connection;
 import linePlanning.columnGeneration.columns.LineFrequencyColumn;

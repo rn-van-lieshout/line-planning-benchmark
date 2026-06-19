@@ -1,4 +1,4 @@
-package linePlanning.data;
+package util;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -12,8 +12,6 @@ import linePlanning.PTN.Connection;
 import linePlanning.instance.ODPair;
 import linePlanning.instance.Station;
 import linePlanning.instance.Track;
-import util.Triple;
-import util.UnorderedPair;
 
 public class Reader
 {

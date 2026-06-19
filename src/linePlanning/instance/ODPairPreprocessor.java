@@ -330,7 +330,6 @@ public class ODPairPreprocessor
 	 */
 	private boolean canBeAggregated(StationNode node)
 	{
-		// TODO Auto-generated method stub
 		return (node.getStation().getType() == 0) && !node.getStation().isTerminalSPR()
 				&& (instance.getTrackNetwork().getOutDegree(node) == 2);
 	}

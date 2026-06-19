@@ -38,9 +38,7 @@ public class DPTN extends DirectedGraph<StationNode, DPTNArc>
 	{
 		this.instance = instance;
 
-		System.out.println("Creating nodes");
 		createNodes();
-		System.out.println("Creating dwell and transfer arcs");
 		createDwellArcs();
 		createDrivingArcs();
 		if (addLineStartArcs)
@@ -52,12 +50,6 @@ public class DPTN extends DirectedGraph<StationNode, DPTNArc>
 			createTransferArcs();
 			createBoardingArcs();
 		}
-
-		System.out.println("Created Frequency Expanded Network with " + this.getNumberOfNodes() + " nodes and "
-				+ this.getNumberOfArcs() + " arcs");
-		// System.out.println("Dwell: " + dwellArcs.size() + " Drive: " +
-		// drivingArcs.size() + " Turnaround: "
-		// + turnaroundArcs.size() + " transfer: " + transferArcs.size());
 		this.determineNodeConjugates(instance);
 		this.determineArcConjugates();
 	}
@@ -206,7 +198,6 @@ public class DPTN extends DirectedGraph<StationNode, DPTNArc>
 	{
 		dwellArcs = new ArrayList<>();
 		transferArcs = new ArrayList<>();
-		System.err.print("Only using transfer penalty, transfer time is 0 \n");
 		for (StationNode sNode : instance.getConnectionNetwork().getNodes())
 		{
 			Station station = sNode.getStation();
@@ -242,7 +233,6 @@ public class DPTN extends DirectedGraph<StationNode, DPTNArc>
 	{
 		dwellArcs = new ArrayList<>();
 		transferArcs = new ArrayList<>();
-		System.err.print("Only using transfer penalty, transfer time is 0 \n");
 		for (StationNode sNode : instance.getConnectionNetwork().getNodes())
 		{
 			Station station = sNode.getStation();
@@ -349,7 +339,6 @@ public class DPTN extends DirectedGraph<StationNode, DPTNArc>
 				}
 			}
 		}
-		System.out.println("There are " + arcConjugates.size() + " conjugate pairs");
 	}
 
 	private void createNodes()

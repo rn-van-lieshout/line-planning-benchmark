@@ -1,7 +1,6 @@
-package linePlanning.CGN.network;
+package linePlanning.CGN;
 
 import java.util.Objects;
-
 import linePlanning.instance.Station;
 import linePlanning.instance.StationNode;
 import linePlanning.lineGeneration.Line;

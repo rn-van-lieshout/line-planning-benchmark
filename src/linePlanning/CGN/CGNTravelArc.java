@@ -1,4 +1,4 @@
-package linePlanning.CGN.network;
+package linePlanning.CGN;
 
 import linePlanning.PTN.Connection;
 import linePlanning.lineGeneration.Line;

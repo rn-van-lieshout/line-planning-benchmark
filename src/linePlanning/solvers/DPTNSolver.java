@@ -26,6 +26,7 @@ import linePlanning.columnGeneration.pricing.LinePlanningPricingRoutine;
 import linePlanning.columnGeneration.pricing.LinePlanningPricingRoutine.NetworkType;
 import linePlanning.instance.LinePlanningInstance;
 import linePlanning.instance.LinePlanningParameters;
+import linePlanning.instance.LinePlanningSolution;
 import linePlanning.instance.ODPair;
 import linePlanning.instance.Station;
 import linePlanning.instance.StationNode;
@@ -134,7 +135,7 @@ public class DPTNSolver extends Solver
 		{
 			// Build grouped strong inequality separator, partitioning OD-pairs by arc
 			// overlap.
-			Map<Station, Map<Set<ODPair>, Double>> totalVolumeMap = buildGroupedVolumeMap(instance, pairsPerGroup);
+			Map<Station, Map<Set<ODPair>, Double>> totalVolumeMap = buildGroupedVolumeMap(instance);
 			branchAndPrice.addCutSeparator(new StrongInequalitySeparator(0.01, totalVolumeMap));
 			if (LinePlanningParameters.LINE_ACTIVATION_COST > 0)
 			{

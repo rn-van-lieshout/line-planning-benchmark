@@ -1,4 +1,4 @@
-package linePlanning.solvers;
+package linePlanning.instance;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -14,10 +14,7 @@ import linePlanning.DPTN.DPTNArc;
 import linePlanning.DPTN.DPTNDrivingArc;
 import linePlanning.DPTN.DPTNDwellArc;
 import linePlanning.PTN.Connection;
-import linePlanning.instance.Index;
-import linePlanning.instance.LinePlanningInstance;
-import linePlanning.instance.Station;
-import linePlanning.instance.StationNode;
+import linePlanning.instance.LinePlanningSolution;
 import linePlanning.lineGeneration.Line;
 
 public class LinePlanningSolutionReader

@@ -8,8 +8,8 @@ import java.util.Map.Entry;
 
 import graph.structures.digraph.DirectedGraphArc;
 import ilog.concert.IloException;
-import linePlanning.CGN.network.CGNArc;
-import linePlanning.CGN.network.CGNTravelArc;
+import linePlanning.CGN.CGNArc;
+import linePlanning.CGN.CGNTravelArc;
 import linePlanning.PTN.Connection;
 import linePlanning.columnGeneration.columns.LineActivationColumn;
 import linePlanning.columnGeneration.columns.LineFrequencyColumn;
@@ -25,6 +25,7 @@ import linePlanning.columnGeneration.pricing.LinePlanningPricingRoutine;
 import linePlanning.columnGeneration.pricing.LinePlanningPricingRoutine.NetworkType;
 import linePlanning.instance.LinePlanningInstance;
 import linePlanning.instance.LinePlanningParameters;
+import linePlanning.instance.LinePlanningSolution;
 import linePlanning.instance.ODPair;
 import linePlanning.instance.StationNode;
 import linePlanning.lineGeneration.Line;

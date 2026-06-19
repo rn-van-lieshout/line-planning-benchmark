@@ -3,7 +3,7 @@ package linePlanning.routeGeneration;
 import graph.structures.digraph.DirectedGraphArc;
 import graph.structures.digraph.DirectedGraphNodeIndex;
 import graph.structures.digraph.activation.ActivationFunction;
-import linePlanning.CGN.network.CGNArc;
+import linePlanning.CGN.CGNArc;
 import linePlanning.DPTN.DPTNArc;
 import linePlanning.DPTN.DPTNDrivingArc;
 import linePlanning.DPTN.DPTNDwellArc;

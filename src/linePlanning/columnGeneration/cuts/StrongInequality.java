@@ -3,8 +3,8 @@ package linePlanning.columnGeneration.cuts;
 import java.util.Objects;
 import java.util.Set;
 
-import linePlanning.CGN.network.CGNArc;
-import linePlanning.CGN.network.CGNTravelArc;
+import linePlanning.CGN.CGNArc;
+import linePlanning.CGN.CGNTravelArc;
 import linePlanning.DPTN.DPTNArc;
 import linePlanning.columnGeneration.columns.LineFrequencyColumn;
 import linePlanning.columnGeneration.columns.LinePlanningColumn;

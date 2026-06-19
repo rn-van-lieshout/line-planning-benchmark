@@ -270,8 +270,6 @@ public class BranchAndPrice<T extends AbstractInstance, U extends AbstractColumn
 				branchingTree.setUpperBound(heuristicSolution.getObjectiveValue());
 				bestSolution = heuristicSolution;
 			}
-
-			// TODO: Restore duals. Do we need to update duals that are not generic?
 			masterProblem.setDuals(optimalDuals);
 			masterProblem.updateGenericDuals();
 		}

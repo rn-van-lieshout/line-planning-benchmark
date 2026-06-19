@@ -7,7 +7,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 import ilog.concert.IloException;
-import linePlanning.CGN.network.CGNTravelArc;
+import linePlanning.CGN.CGNTravelArc;
 import linePlanning.DPTN.DPTNArc;
 import linePlanning.columnGeneration.columns.LineActivationColumn;
 import linePlanning.columnGeneration.columns.LinePlanningColumn;

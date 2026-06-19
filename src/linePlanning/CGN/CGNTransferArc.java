@@ -1,4 +1,4 @@
-package linePlanning.CGN.network;
+package linePlanning.CGN;
 
 public class CGNTransferArc extends CGNArc {
     
