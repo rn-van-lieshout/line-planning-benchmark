@@ -71,7 +71,7 @@ settings.properties
 
 **Requirements:** Java 21, IBM CPLEX 22.1.0 (must be installed and available on the classpath)
 
-The solver is configured by editing the index variables and time limit variable at the top of [src/linePlanning/scripts/Main.java](src/linePlanning/scripts/Main.java):
+To run the solver, edit the settings at the top of [src/linePlanning/scripts/Main.java](src/linePlanning/scripts/Main.java) and execute that class. The settings control which instance, parameter combination, and algorithm to use.
 
 The CPLEX log level and other low-level options are in [settings.properties](settings.properties).
 
