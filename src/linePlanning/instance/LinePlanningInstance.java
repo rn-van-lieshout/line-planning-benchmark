@@ -79,8 +79,6 @@ public class LinePlanningInstance extends AbstractInstance
 	{
 		// Retrieve name from folder.
 		this.folder = folder;
-		//this.routeGenerationFile = folder + "/RouteGeneration/small.txt";
-		//this.lineGenerationFile = folder + "/LineGeneration/medium.txt";
 		name = new File(folder).getName();
 
 		// Read stations.

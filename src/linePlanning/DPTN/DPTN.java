@@ -66,7 +66,6 @@ public class DPTN extends DirectedGraph<StationNode, DPTNArc>
 
 	public DPTNRoute getShortestPath(Station from, Station to)
 	{
-		//System.out.println("Computing path from "+from.getNameFull()+" to "+to.getNameFull());
 		Dijkstra<StationNode, DPTNArc> dijkstra = new Dijkstra<>(this, instance.getDepartureODNode(from));
 		dijkstra.setDestination(instance.getArrivalODNode(to));
 		dijkstra.computeDistances();
@@ -172,7 +171,6 @@ public class DPTN extends DirectedGraph<StationNode, DPTNArc>
 				StationConnectionNode arrivalNode = null;
 				for (StationConnectionNode scsNode : arrivalNodes.get(arrStation))
 				{
-					// System.out.println("Checking: "+scsNode);
 					if (scsNode.getConnection().equals(connection))
 					{
 						arrivalNode = scsNode;
@@ -328,7 +326,6 @@ public class DPTN extends DirectedGraph<StationNode, DPTNArc>
 							conjugatePairMap.put(outOrig.getData(), pair);
 							conjugatePairMap.put(inConjugateNode.getData(), pair);
 						}
-						// System.out.println("\n"+outOrig+" has conjugate \n"+inConjugateNode);
 						foundConjugate = true;
 						break;
 					}
@@ -356,7 +353,6 @@ public class DPTN extends DirectedGraph<StationNode, DPTNArc>
 				boolean arrival = false;
 
 				StationConnectionNode sclNode = new StationConnectionNode(station, c, arrival);
-				// System.out.println("Adding "+sclNode);
 				addNode(sclNode);
 				depsAtStation.add(sclNode);
 			}

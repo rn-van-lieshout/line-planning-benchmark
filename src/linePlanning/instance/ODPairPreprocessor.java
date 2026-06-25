@@ -84,18 +84,15 @@ public class ODPairPreprocessor
 				addToODPairMap(newMap, od);
 				continue;
 			}
-			// System.out.println("\n Spliting "+origin+"-"+destination +" into ");
 			// there is a common transfer station, so split the OD
 			Station from = origin;
 			for (Station transfer : commonTransferStations)
 			{
 				addToODPairMap(newMap, new ODPair(from, transfer, od.getVolume()));
-				// System.out.println(from+"-"+transfer);
 				from = transfer;
 			}
 			// add the final one
 			addToODPairMap(newMap, new ODPair(from, destination, od.getVolume()));
-			// System.out.println(from+"-"+destination);
 			transferPenaltySplittedODs = getTransferPenaltySplittedODs()
 					+ od.getVolume() * commonTransferStations.size();
 		}

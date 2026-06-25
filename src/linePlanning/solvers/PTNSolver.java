@@ -134,7 +134,6 @@ public class PTNSolver extends Solver
 		}
 		if (karbsteinification)
 		{
-			System.out.println("initializing karbsteinification");
 			int count = 0;
 			// new approach
 			for (Entry<Connection, Set<List<Line>>> ent : lineSetsPerConnection.entrySet())

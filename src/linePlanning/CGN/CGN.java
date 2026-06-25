@@ -25,8 +25,6 @@ public class CGN extends DirectedGraph<StationNode, CGNArc>
 	private List<StationLineNode> stationLineNodes;
 	private Map<Line, List<CGNArc>> arcsByLine;
 
-	//private Map<CGNTransferArc, DirectedGraphArc<StationNode, CGNArc>> transferArcMap;
-
 	public CGN()
 	{
 		super();
@@ -36,8 +34,6 @@ public class CGN extends DirectedGraph<StationNode, CGNArc>
 		this.transferNodeMap = new LinkedHashMap<>();
 		this.stationLineNodes = new ArrayList<>();
 		this.arcsByLine = new LinkedHashMap<>();
-
-		//this.transferArcMap = new LinkedHashMap<>();
 	}
 
 	public static CGN generate(LinePlanningInstance instance, List<Line> linePool)
@@ -73,8 +69,8 @@ public class CGN extends DirectedGraph<StationNode, CGNArc>
 				transferArc++;
 			}
 		}
-		System.out.println("Travel: " + travelArc);
-		System.out.println("Transfer: " + transferArc);
+		System.out.println("CGN contains "+travelArc +" travel arcs and "+
+			transferArc +" transfer arcs" + travelArc);
 
 		return cgn;
 	}

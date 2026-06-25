@@ -206,7 +206,6 @@ public class ColumnGeneration<T extends AbstractInstance, U extends AbstractColu
 						double reducedCost = masterProblem.getReducedCost(column.getKey(), false);
 						if (Math.abs(reducedCost - column.getValue()) > 1)
 						{
-							System.out.println("OOPS: " + reducedCost + " " + column.getValue());
 							throw new IllegalArgumentException("REDUCED COST ERROR");
 						}
 					}

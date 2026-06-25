@@ -122,7 +122,6 @@ public class LinePlanningMasterProblem
 			lineConstraints.add(constraint);
 		}
 
-		// TODO: What about branching constraints?
 	}
 
 	public void setMaximumWorkMem(int maxMB) throws IloException {
@@ -136,7 +135,6 @@ public class LinePlanningMasterProblem
 		// Initialise column.
 		IloColumn columnVar = cplex.column(objective, column.getCoefficient());
 		
-		// TODO: Safety check
 		if (columnMap.containsKey(column))
 		{
 			System.out.println("ALREADY CONTAINED! " + column);

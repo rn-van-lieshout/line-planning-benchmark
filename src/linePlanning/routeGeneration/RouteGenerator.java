@@ -81,8 +81,6 @@ public class RouteGenerator
 		Station origin = pair.getOrigin();
 		Station destination = pair.getDestination();
 
-		boolean print = origin.getName().equals("Alm2") && destination.getName().equals("Apn");
-
 		StationNode from = instance.getDepartureODNode(origin);
 		StationNode to = instance.getArrivalODNode(destination);
 
@@ -96,8 +94,6 @@ public class RouteGenerator
 			shortestPathDurations.put(pair, distance);
 			double threshold = distance + maxDetourMinutes;
 			int maximumNumberTransfers = computeMaximumNumberTransfers(from, to);
-			if (print)
-				System.out.println("Distance = " + distance + " maxTransfers = " + maximumNumberTransfers);
 			// Enumerate paths.
 			DFS<StationNode, DPTNArc> DFS = new DFS<>();
 			for (List<DirectedGraphArc<StationNode, DPTNArc>> path : DFS.applyDFS(DPTN, from, to, threshold,
@@ -128,12 +124,6 @@ public class RouteGenerator
 			for (DPTNRoute r : routes)
 				if (r.getNrTransfers() == minTransfers.get(r.getConnectionPath()))
 					filtered.add(r);
-			if (print)
-			{
-				System.out.println("After filtering:");
-				for (DPTNRoute r : filtered)
-					System.out.println("  " + r +" with "+r.getNrTransfers()+" transfers");
-			}
 			return filtered;
 		}
 		return routes;

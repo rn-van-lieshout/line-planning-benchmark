@@ -73,13 +73,6 @@ public class LinePoolGenerator
 				if (dijkstra.containsPath(instance.getStationNode(destination)))
 				{
 					boolean print = false;
-					if (origin.getName().equals("BS"))
-					{
-						if (destination.getName().equals("ZUE"))
-						{
-							print = false;
-						}
-					}
 
 					double distance = dijkstra.getDistance(instance.getStationNode(destination));
 					double threshold = detourFactor * distance;
@@ -99,8 +92,7 @@ public class LinePoolGenerator
 					StationNode to = instance.getArrivalODNode(destination);
 					DFS<StationNode, DPTNArc> DFS = new DFS<>();
 					List<Line> linesPerPair = new ArrayList<>();
-					if (print)
-						System.out.println("Here");
+
 					for (List<DirectedGraphArc<StationNode, DPTNArc>> path : DFS.applyDFS(DPTN, from, to, threshold,
 							new DistanceWeightFunction<DPTNArc>()))
 					{
